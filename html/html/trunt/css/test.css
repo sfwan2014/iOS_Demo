@@ -1,0 +1,58 @@
+@charset "utf-8";
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {margin: 0;padding: 0;}
+body {font-family: 'Microsoft Yahei','helvetica','arial';background: #fff; -webkit-text-size-adjust:none; -webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color: rgba(0,0,0,0);}
+article,aside,dialog,footer,header,section,footer,nav,figure,menu{display:block;}
+table {border-collapse: collapse;border-spacing: 0;}
+th,td {text-align: center;vertical-align: top;}
+h1,h2,h3,h4,h5,h6 {font-size: 100%;font-weight: normal;}
+fieldset,img {border: 0;}
+ol,ul,li {list-style: none;}
+input {font-size: 120%;}
+.clearfix:after {content: ".";display: block;height: 0;clear: both;visibility: hidden;}
+.clear {clear: both;}
+.hide{display: none;}
+a:hover{text-decoration:none;}
+ins,a{text-decoration:none;}
+em,i{font-style:normal;}
+.clear{clear:both;height:0;font:0/0 Arial;visibility:hidden;}
+.fl{float: left;}
+.fr{float: right;}
+
+body{height: 100%;overflow-x: hidden;}
+
+.j-main{width:100%;min-height: 300px;position: absolute;left: 0px;top: 0px;z-index: 0;overflow:hidden;padding: 62px 0 20px;
+background: #b6d6f9; /* Old browsers */
+background: -moz-linear-gradient(top,  #b6d6f9 0%, #e5dccf 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b6d6f9), color-stop(100%,#e5dccf)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #b6d6f9 0%,#e5dccf 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #b6d6f9 0%,#e5dccf 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #b6d6f9 0%,#e5dccf 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #b6d6f9 0%,#e5dccf 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b6d6f9', endColorstr='#e5dccf',GradientType=0 ); /* IE6-9 */
+background-attachment:fixed;
+}
+
+.j-topCon{height: 42px;background: #000;position: fixed;top: 0px;left: 0px;z-index: 1000;width: 100%;}
+.j-top{height: 41px;border-bottom: 1px solid #0860b6;background: url(../newImages/topBg.png) no-repeat;background-size:100% 41px;border-radius: 5px 5px 0 0;text-align: center;position: relative;z-index: 99;}
+.j-top h2{font-size: 1.3em;padding:11px 0;height:18px;line-height:18px;text-align: center;display: inline-block;color: #131313;}
+.j-top a{text-indent: -9999px;height: 32px;background: url(../newImages/topIcon02.png) no-repeat;background-size:200px 40px;display: block;position: absolute;z-index: 99;}
+.j-top a.nav{background-position: 0 0;width: 19px;left: 10px;top: 5px;}
+.j-top a.quit{background-position: -51px 0;width: 32px;right: 10px;top: 4px;}
+.j-top a.login{background-position: -146px 0;width: 32px;right: 10px;top: 4px;}
+.j-top a.goback{background-position: -19px -4px;width: 32px;left: 10px;top: 4px;}
+.j-top a.cancel{font-size: 0.8125em;text-indent:0;line-height:41px;color:#bfbfbf;width: 50px;height:41px;display:block;position: absolute;z-index: 99;left: 0;top: 0;background: url(../newImages/line02.png) center right no-repeat;background-size:1px 27px;cursor: pointer;}
+.j-top a.shaixuan{background-position: -83px 0;width: 32px;right: 10px;top: 4px;}
+.j-top a.shaixuanHover{background-position: -115px 0;width: 32px;right: 10px;top: 4px;}
+
+
+.j-wrapCon{overflow: visible;position: relative;z-index: 1;margin-top: -10px;border-radius:5px 5px 0 0;}
+
+.j-wrap{width: 100%;margin: 0 10px;border:1px solid #92bae6;border-top: none;border-bottom: none;background: #fff;border-radius:5px 5px 0 0;}
+.j-wrap .bd{width: 100%;border-radius:5px 5px 0 0;}
+
+.j-fotCon{height: 50px;position: fixed;bottom: 0px;left: 0px;z-index: 1000;width: 100%;}
+.j-botCon{height: 20px;position: fixed;z-index: 99;bottom: 0px;width: 100%;background:#e5dccf;z-index: 1000;}
+.j-botCon .bd{background:#fff;height:10px;margin: 0 10px 10px;border:1px solid #92bae6;border-top: none;border-radius: 0 0 5px 5px;}
+.j-totCon{height: 20px;position: fixed;z-index: 99;top: 42px;width: 100%;z-index: 2;}
+.j-totCon .hd{height:10px;background: #b8d6f7;}
+.j-totCon .bd{background:none;height:10px;margin: 0px 10px 0;border:1px solid #92bae6;border-bottom: none;border-radius:5px 5px 0 0;}

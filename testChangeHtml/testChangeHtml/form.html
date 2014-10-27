@@ -1,0 +1,28 @@
+<html>
+<head charset="utf-8">
+<script type="text/javascript">
+    var p1,p3,p13;
+    self.inputContent = function myFunction(p1, p2, p13) {
+        var field = document.getElementsByName('p1')[0];
+        field.value=p1;
+        
+        var fild = document.getElementsByName('p3')[0];
+        fild.value=p3;
+        alert(fild.value);
+        
+        var fild = document.getElementsByName('p13')[0];
+        fild.value=p13;
+        
+        document.forms[0].submit();
+};
+
+</script>
+</head>
+<body>
+<form>
+laiyuan<input type="text"name="p1"></br>
+uuid<input type="text" name="p3"></br>
+qianming<input type="text" name="p13">
+</form>
+</body>
+</html>

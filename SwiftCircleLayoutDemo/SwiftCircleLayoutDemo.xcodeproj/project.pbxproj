@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F0EF7E9719B45949007EE21E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EF7E9619B45949007EE21E /* AppDelegate.swift */; };
+		F0EF7E9919B45949007EE21E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EF7E9819B45949007EE21E /* ViewController.swift */; };
+		F0EF7E9C19B45949007EE21E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0EF7E9A19B45949007EE21E /* Main.storyboard */; };
+		F0EF7E9E19B45949007EE21E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0EF7E9D19B45949007EE21E /* Images.xcassets */; };
+		F0EF7EAA19B45949007EE21E /* SwiftCircleLayoutDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EF7EA919B45949007EE21E /* SwiftCircleLayoutDemoTests.swift */; };
+		F0EF7EB519B45C34007EE21E /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EF7EB319B45C34007EE21E /* Cell.swift */; };
+		F0EF7EB619B45C34007EE21E /* Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0EF7EB419B45C34007EE21E /* Cell.xib */; };
+		F0EF7EB819B46071007EE21E /* CircleLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EF7EB719B46071007EE21E /* CircleLayout.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F0EF7EA419B45949007EE21E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0EF7E8919B45949007EE21E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0EF7E9019B45949007EE21E;
+			remoteInfo = SwiftCircleLayoutDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F0EF7E9119B45949007EE21E /* SwiftCircleLayoutDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftCircleLayoutDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0EF7E9519B45949007EE21E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0EF7E9619B45949007EE21E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F0EF7E9819B45949007EE21E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F0EF7E9B19B45949007EE21E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F0EF7E9D19B45949007EE21E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F0EF7EA319B45949007EE21E /* SwiftCircleLayoutDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftCircleLayoutDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0EF7EA819B45949007EE21E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0EF7EA919B45949007EE21E /* SwiftCircleLayoutDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCircleLayoutDemoTests.swift; sourceTree = "<group>"; };
+		F0EF7EB319B45C34007EE21E /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		F0EF7EB419B45C34007EE21E /* Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Cell.xib; sourceTree = "<group>"; };
+		F0EF7EB719B46071007EE21E /* CircleLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleLayout.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F0EF7E8E19B45949007EE21E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0EF7EA019B45949007EE21E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F0EF7E8819B45949007EE21E = {
+			isa = PBXGroup;
+			children = (
+				F0EF7E9319B45949007EE21E /* SwiftCircleLayoutDemo */,
+				F0EF7EA619B45949007EE21E /* SwiftCircleLayoutDemoTests */,
+				F0EF7E9219B45949007EE21E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F0EF7E9219B45949007EE21E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0EF7E9119B45949007EE21E /* SwiftCircleLayoutDemo.app */,
+				F0EF7EA319B45949007EE21E /* SwiftCircleLayoutDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F0EF7E9319B45949007EE21E /* SwiftCircleLayoutDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F0EF7E9619B45949007EE21E /* AppDelegate.swift */,
+				F0EF7E9819B45949007EE21E /* ViewController.swift */,
+				F0EF7EB319B45C34007EE21E /* Cell.swift */,
+				F0EF7EB419B45C34007EE21E /* Cell.xib */,
+				F0EF7EB719B46071007EE21E /* CircleLayout.swift */,
+				F0EF7E9A19B45949007EE21E /* Main.storyboard */,
+				F0EF7E9D19B45949007EE21E /* Images.xcassets */,
+				F0EF7E9419B45949007EE21E /* Supporting Files */,
+			);
+			path = SwiftCircleLayoutDemo;
+			sourceTree = "<group>";
+		};
+		F0EF7E9419B45949007EE21E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F0EF7E9519B45949007EE21E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F0EF7EA619B45949007EE21E /* SwiftCircleLayoutDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				F0EF7EA919B45949007EE21E /* SwiftCircleLayoutDemoTests.swift */,
+				F0EF7EA719B45949007EE21E /* Supporting Files */,
+			);
+			path = SwiftCircleLayoutDemoTests;
+			sourceTree = "<group>";
+		};
+		F0EF7EA719B45949007EE21E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F0EF7EA819B45949007EE21E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F0EF7E9019B45949007EE21E /* SwiftCircleLayoutDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0EF7EAD19B45949007EE21E /* Build configuration list for PBXNativeTarget "SwiftCircleLayoutDemo" */;
+			buildPhases = (
+				F0EF7E8D19B45949007EE21E /* Sources */,
+				F0EF7E8E19B45949007EE21E /* Frameworks */,
+				F0EF7E8F19B45949007EE21E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftCircleLayoutDemo;
+			productName = SwiftCircleLayoutDemo;
+			productReference = F0EF7E9119B45949007EE21E /* SwiftCircleLayoutDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F0EF7EA219B45949007EE21E /* SwiftCircleLayoutDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0EF7EB019B45949007EE21E /* Build configuration list for PBXNativeTarget "SwiftCircleLayoutDemoTests" */;
+			buildPhases = (
+				F0EF7E9F19B45949007EE21E /* Sources */,
+				F0EF7EA019B45949007EE21E /* Frameworks */,
+				F0EF7EA119B45949007EE21E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0EF7EA519B45949007EE21E /* PBXTargetDependency */,
+			);
+			name = SwiftCircleLayoutDemoTests;
+			productName = SwiftCircleLayoutDemoTests;
+			productReference = F0EF7EA319B45949007EE21E /* SwiftCircleLayoutDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F0EF7E8919B45949007EE21E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = sfwan;
+				TargetAttributes = {
+					F0EF7E9019B45949007EE21E = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					F0EF7EA219B45949007EE21E = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = F0EF7E9019B45949007EE21E;
+					};
+				};
+			};
+			buildConfigurationList = F0EF7E8C19B45949007EE21E /* Build configuration list for PBXProject "SwiftCircleLayoutDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F0EF7E8819B45949007EE21E;
+			productRefGroup = F0EF7E9219B45949007EE21E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F0EF7E9019B45949007EE21E /* SwiftCircleLayoutDemo */,
+				F0EF7EA219B45949007EE21E /* SwiftCircleLayoutDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F0EF7E8F19B45949007EE21E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0EF7E9C19B45949007EE21E /* Main.storyboard in Resources */,
+				F0EF7EB619B45C34007EE21E /* Cell.xib in Resources */,
+				F0EF7E9E19B45949007EE21E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0EF7EA119B45949007EE21E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F0EF7E8D19B45949007EE21E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0EF7E9919B45949007EE21E /* ViewController.swift in Sources */,
+				F0EF7EB819B46071007EE21E /* CircleLayout.swift in Sources */,
+				F0EF7E9719B45949007EE21E /* AppDelegate.swift in Sources */,
+				F0EF7EB519B45C34007EE21E /* Cell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0EF7E9F19B45949007EE21E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0EF7EAA19B45949007EE21E /* SwiftCircleLayoutDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F0EF7EA519B45949007EE21E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0EF7E9019B45949007EE21E /* SwiftCircleLayoutDemo */;
+			targetProxy = F0EF7EA419B45949007EE21E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F0EF7E9A19B45949007EE21E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0EF7E9B19B45949007EE21E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F0EF7EAB19B45949007EE21E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F0EF7EAC19B45949007EE21E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F0EF7EAE19B45949007EE21E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = SwiftCircleLayoutDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F0EF7EAF19B45949007EE21E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = SwiftCircleLayoutDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F0EF7EB119B45949007EE21E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SwiftCircleLayoutDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftCircleLayoutDemo.app/SwiftCircleLayoutDemo";
+			};
+			name = Debug;
+		};
+		F0EF7EB219B45949007EE21E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SwiftCircleLayoutDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftCircleLayoutDemo.app/SwiftCircleLayoutDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F0EF7E8C19B45949007EE21E /* Build configuration list for PBXProject "SwiftCircleLayoutDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0EF7EAB19B45949007EE21E /* Debug */,
+				F0EF7EAC19B45949007EE21E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0EF7EAD19B45949007EE21E /* Build configuration list for PBXNativeTarget "SwiftCircleLayoutDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0EF7EAE19B45949007EE21E /* Debug */,
+				F0EF7EAF19B45949007EE21E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F0EF7EB019B45949007EE21E /* Build configuration list for PBXNativeTarget "SwiftCircleLayoutDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0EF7EB119B45949007EE21E /* Debug */,
+				F0EF7EB219B45949007EE21E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F0EF7E8919B45949007EE21E /* Project object */;
+}

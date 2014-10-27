@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellID" rowHeight="171" id="KGk-i7-Jjw" customClass="ClientBackgroundCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="171"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="170"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Of6-hI-wSe">
+                        <rect key="frame" x="76" y="0.0" width="1" height="171"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="171" id="Kkl-TC-Aim"/>
+                            <constraint firstAttribute="width" constant="1" id="UHF-eG-d5M"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="07-25" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jJ8-dd-kkB">
+                        <rect key="frame" x="9" y="13" width="59" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="TS8-E2-WFf"/>
+                            <constraint firstAttribute="width" constant="59" id="tB0-S8-FQu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="5ln-9y-utA">
+                        <rect key="frame" x="97" y="13" width="223" height="157"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="XBq-lQ-eeO"/>
+                            <constraint firstAttribute="width" constant="223" id="uJU-cu-PWH"/>
+                        </constraints>
+                    </tableView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ebO-7G-wq5">
+                        <rect key="frame" x="56" y="0.0" width="40" height="40"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.097750756048387094" green="0.76078431372549016" blue="0.76078431372549016" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="U26-bj-iyd"/>
+                            <constraint firstAttribute="width" constant="40" id="kyn-RE-cKo"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Of6-hI-wSe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="7cx-Fo-fce"/>
+                    <constraint firstAttribute="trailing" secondItem="5ln-9y-utA" secondAttribute="trailing" id="IZR-P8-blp"/>
+                    <constraint firstItem="5ln-9y-utA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="Ixi-rq-e1p"/>
+                    <constraint firstAttribute="bottom" secondItem="Of6-hI-wSe" secondAttribute="bottom" constant="-1" id="JmK-v7-ZkL"/>
+                    <constraint firstItem="Of6-hI-wSe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="76" id="Ls5-67-kKX"/>
+                    <constraint firstItem="jJ8-dd-kkB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="9" id="Smx-xi-7y0"/>
+                    <constraint firstItem="ebO-7G-wq5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="56" id="XGM-Dr-yf4"/>
+                    <constraint firstItem="jJ8-dd-kkB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="b2Q-yD-eTw"/>
+                    <constraint firstAttribute="bottom" secondItem="5ln-9y-utA" secondAttribute="bottom" id="j7K-C4-akz"/>
+                    <constraint firstItem="ebO-7G-wq5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="yeU-t8-MzN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.80323145890000003" green="1" blue="0.69559957510000003" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="dateLabel" destination="jJ8-dd-kkB" id="EXD-pL-k7E"/>
+                <outlet property="imgView" destination="ebO-7G-wq5" id="qrp-BM-1BH"/>
+                <outlet property="tableView" destination="5ln-9y-utA" id="nim-2w-P8h"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

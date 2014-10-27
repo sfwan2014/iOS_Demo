@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F0D9FF261978C184006DFE7B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0D9FF251978C184006DFE7B /* Foundation.framework */; };
+		F0D9FF281978C184006DFE7B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0D9FF271978C184006DFE7B /* CoreGraphics.framework */; };
+		F0D9FF2A1978C184006DFE7B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0D9FF291978C184006DFE7B /* UIKit.framework */; };
+		F0D9FF301978C184006DFE7B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F0D9FF2E1978C184006DFE7B /* InfoPlist.strings */; };
+		F0D9FF321978C184006DFE7B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D9FF311978C184006DFE7B /* main.m */; };
+		F0D9FF361978C184006DFE7B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D9FF351978C184006DFE7B /* AppDelegate.m */; };
+		F0D9FF381978C184006DFE7B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0D9FF371978C184006DFE7B /* Images.xcassets */; };
+		F0D9FF3F1978C184006DFE7B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0D9FF3E1978C184006DFE7B /* XCTest.framework */; };
+		F0D9FF401978C184006DFE7B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0D9FF251978C184006DFE7B /* Foundation.framework */; };
+		F0D9FF411978C184006DFE7B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0D9FF291978C184006DFE7B /* UIKit.framework */; };
+		F0D9FF491978C184006DFE7B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F0D9FF471978C184006DFE7B /* InfoPlist.strings */; };
+		F0D9FF4B1978C184006DFE7B /* GlassViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D9FF4A1978C184006DFE7B /* GlassViewDemoTests.m */; };
+		F0D9FF571978C1AE006DFE7B /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D9FF551978C1AE006DFE7B /* RootViewController.m */; };
+		F0D9FF581978C1AE006DFE7B /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0D9FF561978C1AE006DFE7B /* RootViewController.xib */; };
+		F0D9FF5B1978C1F0006DFE7B /* SFGlassView.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D9FF5A1978C1F0006DFE7B /* SFGlassView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F0D9FF421978C184006DFE7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0D9FF1A1978C184006DFE7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0D9FF211978C184006DFE7B;
+			remoteInfo = GlassViewDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F0D9FF221978C184006DFE7B /* GlassViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlassViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0D9FF251978C184006DFE7B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F0D9FF271978C184006DFE7B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F0D9FF291978C184006DFE7B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F0D9FF2D1978C184006DFE7B /* GlassViewDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GlassViewDemo-Info.plist"; sourceTree = "<group>"; };
+		F0D9FF2F1978C184006DFE7B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F0D9FF311978C184006DFE7B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F0D9FF331978C184006DFE7B /* GlassViewDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GlassViewDemo-Prefix.pch"; sourceTree = "<group>"; };
+		F0D9FF341978C184006DFE7B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F0D9FF351978C184006DFE7B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F0D9FF371978C184006DFE7B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F0D9FF3D1978C184006DFE7B /* GlassViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlassViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0D9FF3E1978C184006DFE7B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F0D9FF461978C184006DFE7B /* GlassViewDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GlassViewDemoTests-Info.plist"; sourceTree = "<group>"; };
+		F0D9FF481978C184006DFE7B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F0D9FF4A1978C184006DFE7B /* GlassViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlassViewDemoTests.m; sourceTree = "<group>"; };
+		F0D9FF541978C1AE006DFE7B /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		F0D9FF551978C1AE006DFE7B /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		F0D9FF561978C1AE006DFE7B /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		F0D9FF591978C1F0006DFE7B /* SFGlassView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFGlassView.h; sourceTree = "<group>"; };
+		F0D9FF5A1978C1F0006DFE7B /* SFGlassView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFGlassView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F0D9FF1F1978C184006DFE7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0D9FF281978C184006DFE7B /* CoreGraphics.framework in Frameworks */,
+				F0D9FF2A1978C184006DFE7B /* UIKit.framework in Frameworks */,
+				F0D9FF261978C184006DFE7B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0D9FF3A1978C184006DFE7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0D9FF3F1978C184006DFE7B /* XCTest.framework in Frameworks */,
+				F0D9FF411978C184006DFE7B /* UIKit.framework in Frameworks */,
+				F0D9FF401978C184006DFE7B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F0D9FF191978C184006DFE7B = {
+			isa = PBXGroup;
+			children = (
+				F0D9FF2B1978C184006DFE7B /* GlassViewDemo */,
+				F0D9FF441978C184006DFE7B /* GlassViewDemoTests */,
+				F0D9FF241978C184006DFE7B /* Frameworks */,
+				F0D9FF231978C184006DFE7B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F0D9FF231978C184006DFE7B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0D9FF221978C184006DFE7B /* GlassViewDemo.app */,
+				F0D9FF3D1978C184006DFE7B /* GlassViewDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F0D9FF241978C184006DFE7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0D9FF251978C184006DFE7B /* Foundation.framework */,
+				F0D9FF271978C184006DFE7B /* CoreGraphics.framework */,
+				F0D9FF291978C184006DFE7B /* UIKit.framework */,
+				F0D9FF3E1978C184006DFE7B /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F0D9FF2B1978C184006DFE7B /* GlassViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F0D9FF341978C184006DFE7B /* AppDelegate.h */,
+				F0D9FF351978C184006DFE7B /* AppDelegate.m */,
+				F0D9FF541978C1AE006DFE7B /* RootViewController.h */,
+				F0D9FF551978C1AE006DFE7B /* RootViewController.m */,
+				F0D9FF561978C1AE006DFE7B /* RootViewController.xib */,
+				F0D9FF591978C1F0006DFE7B /* SFGlassView.h */,
+				F0D9FF5A1978C1F0006DFE7B /* SFGlassView.m */,
+				F0D9FF371978C184006DFE7B /* Images.xcassets */,
+				F0D9FF2C1978C184006DFE7B /* Supporting Files */,
+			);
+			path = GlassViewDemo;
+			sourceTree = "<group>";
+		};
+		F0D9FF2C1978C184006DFE7B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F0D9FF2D1978C184006DFE7B /* GlassViewDemo-Info.plist */,
+				F0D9FF2E1978C184006DFE7B /* InfoPlist.strings */,
+				F0D9FF311978C184006DFE7B /* main.m */,
+				F0D9FF331978C184006DFE7B /* GlassViewDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F0D9FF441978C184006DFE7B /* GlassViewDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				F0D9FF4A1978C184006DFE7B /* GlassViewDemoTests.m */,
+				F0D9FF451978C184006DFE7B /* Supporting Files */,
+			);
+			path = GlassViewDemoTests;
+			sourceTree = "<group>";
+		};
+		F0D9FF451978C184006DFE7B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F0D9FF461978C184006DFE7B /* GlassViewDemoTests-Info.plist */,
+				F0D9FF471978C184006DFE7B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F0D9FF211978C184006DFE7B /* GlassViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0D9FF4E1978C184006DFE7B /* Build configuration list for PBXNativeTarget "GlassViewDemo" */;
+			buildPhases = (
+				F0D9FF1E1978C184006DFE7B /* Sources */,
+				F0D9FF1F1978C184006DFE7B /* Frameworks */,
+				F0D9FF201978C184006DFE7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GlassViewDemo;
+			productName = GlassViewDemo;
+			productReference = F0D9FF221978C184006DFE7B /* GlassViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F0D9FF3C1978C184006DFE7B /* GlassViewDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0D9FF511978C184006DFE7B /* Build configuration list for PBXNativeTarget "GlassViewDemoTests" */;
+			buildPhases = (
+				F0D9FF391978C184006DFE7B /* Sources */,
+				F0D9FF3A1978C184006DFE7B /* Frameworks */,
+				F0D9FF3B1978C184006DFE7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0D9FF431978C184006DFE7B /* PBXTargetDependency */,
+			);
+			name = GlassViewDemoTests;
+			productName = GlassViewDemoTests;
+			productReference = F0D9FF3D1978C184006DFE7B /* GlassViewDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F0D9FF1A1978C184006DFE7B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = sfwan;
+				TargetAttributes = {
+					F0D9FF3C1978C184006DFE7B = {
+						TestTargetID = F0D9FF211978C184006DFE7B;
+					};
+				};
+			};
+			buildConfigurationList = F0D9FF1D1978C184006DFE7B /* Build configuration list for PBXProject "GlassViewDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F0D9FF191978C184006DFE7B;
+			productRefGroup = F0D9FF231978C184006DFE7B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F0D9FF211978C184006DFE7B /* GlassViewDemo */,
+				F0D9FF3C1978C184006DFE7B /* GlassViewDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F0D9FF201978C184006DFE7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0D9FF301978C184006DFE7B /* InfoPlist.strings in Resources */,
+				F0D9FF381978C184006DFE7B /* Images.xcassets in Resources */,
+				F0D9FF581978C1AE006DFE7B /* RootViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0D9FF3B1978C184006DFE7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0D9FF491978C184006DFE7B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F0D9FF1E1978C184006DFE7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0D9FF361978C184006DFE7B /* AppDelegate.m in Sources */,
+				F0D9FF321978C184006DFE7B /* main.m in Sources */,
+				F0D9FF5B1978C1F0006DFE7B /* SFGlassView.m in Sources */,
+				F0D9FF571978C1AE006DFE7B /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0D9FF391978C184006DFE7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0D9FF4B1978C184006DFE7B /* GlassViewDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F0D9FF431978C184006DFE7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0D9FF211978C184006DFE7B /* GlassViewDemo */;
+			targetProxy = F0D9FF421978C184006DFE7B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F0D9FF2E1978C184006DFE7B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0D9FF2F1978C184006DFE7B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F0D9FF471978C184006DFE7B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0D9FF481978C184006DFE7B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F0D9FF4C1978C184006DFE7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F0D9FF4D1978C184006DFE7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F0D9FF4F1978C184006DFE7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GlassViewDemo/GlassViewDemo-Prefix.pch";
+				INFOPLIST_FILE = "GlassViewDemo/GlassViewDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F0D9FF501978C184006DFE7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GlassViewDemo/GlassViewDemo-Prefix.pch";
+				INFOPLIST_FILE = "GlassViewDemo/GlassViewDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F0D9FF521978C184006DFE7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GlassViewDemo.app/GlassViewDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GlassViewDemo/GlassViewDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GlassViewDemoTests/GlassViewDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F0D9FF531978C184006DFE7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GlassViewDemo.app/GlassViewDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GlassViewDemo/GlassViewDemo-Prefix.pch";
+				INFOPLIST_FILE = "GlassViewDemoTests/GlassViewDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F0D9FF1D1978C184006DFE7B /* Build configuration list for PBXProject "GlassViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0D9FF4C1978C184006DFE7B /* Debug */,
+				F0D9FF4D1978C184006DFE7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0D9FF4E1978C184006DFE7B /* Build configuration list for PBXNativeTarget "GlassViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0D9FF4F1978C184006DFE7B /* Debug */,
+				F0D9FF501978C184006DFE7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F0D9FF511978C184006DFE7B /* Build configuration list for PBXNativeTarget "GlassViewDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0D9FF521978C184006DFE7B /* Debug */,
+				F0D9FF531978C184006DFE7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F0D9FF1A1978C184006DFE7B /* Project object */;
+}

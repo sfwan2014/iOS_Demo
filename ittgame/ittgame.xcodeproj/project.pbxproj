@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		652C13FA187D43B000BE97BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 652C13F9187D43B000BE97BF /* Foundation.framework */; };
+		652C13FC187D43B000BE97BF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 652C13FB187D43B000BE97BF /* CoreGraphics.framework */; };
+		652C13FE187D43B000BE97BF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 652C13FD187D43B000BE97BF /* UIKit.framework */; };
+		652C1400187D43B000BE97BF /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 652C13FF187D43B000BE97BF /* GLKit.framework */; };
+		652C1402187D43B000BE97BF /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 652C1401187D43B000BE97BF /* OpenGLES.framework */; };
+		652C1408187D43B000BE97BF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 652C1406187D43B000BE97BF /* InfoPlist.strings */; };
+		652C140A187D43B000BE97BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 652C1409187D43B000BE97BF /* main.m */; };
+		652C140E187D43B000BE97BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 652C140D187D43B000BE97BF /* AppDelegate.m */; };
+		652C1411187D43B000BE97BF /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 652C140F187D43B000BE97BF /* Main_iPhone.storyboard */; };
+		652C1414187D43B000BE97BF /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 652C1412187D43B000BE97BF /* Main_iPad.storyboard */; };
+		652C1416187D43B000BE97BF /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 652C1415187D43B000BE97BF /* Shader.fsh */; };
+		652C1418187D43B000BE97BF /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 652C1417187D43B000BE97BF /* Shader.vsh */; };
+		652C141B187D43B000BE97BF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 652C141A187D43B000BE97BF /* ViewController.m */; };
+		652C141D187D43B000BE97BF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 652C141C187D43B000BE97BF /* Images.xcassets */; };
+		652C1424187D43B000BE97BF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 652C1423187D43B000BE97BF /* XCTest.framework */; };
+		652C1425187D43B000BE97BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 652C13F9187D43B000BE97BF /* Foundation.framework */; };
+		652C1426187D43B000BE97BF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 652C13FD187D43B000BE97BF /* UIKit.framework */; };
+		652C142E187D43B000BE97BF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 652C142C187D43B000BE97BF /* InfoPlist.strings */; };
+		652C1430187D43B000BE97BF /* ittgameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 652C142F187D43B000BE97BF /* ittgameTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		652C1427187D43B000BE97BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 652C13EE187D43B000BE97BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 652C13F5187D43B000BE97BF;
+			remoteInfo = ittgame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		652C13F6187D43B000BE97BF /* ittgame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ittgame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		652C13F9187D43B000BE97BF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		652C13FB187D43B000BE97BF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		652C13FD187D43B000BE97BF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		652C13FF187D43B000BE97BF /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		652C1401187D43B000BE97BF /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		652C1405187D43B000BE97BF /* ittgame-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ittgame-Info.plist"; sourceTree = "<group>"; };
+		652C1407187D43B000BE97BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		652C1409187D43B000BE97BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		652C140B187D43B000BE97BF /* ittgame-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ittgame-Prefix.pch"; sourceTree = "<group>"; };
+		652C140C187D43B000BE97BF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		652C140D187D43B000BE97BF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		652C1410187D43B000BE97BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		652C1413187D43B000BE97BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		652C1415187D43B000BE97BF /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
+		652C1417187D43B000BE97BF /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
+		652C1419187D43B000BE97BF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		652C141A187D43B000BE97BF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		652C141C187D43B000BE97BF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		652C1422187D43B000BE97BF /* ittgameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ittgameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		652C1423187D43B000BE97BF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		652C142B187D43B000BE97BF /* ittgameTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ittgameTests-Info.plist"; sourceTree = "<group>"; };
+		652C142D187D43B000BE97BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		652C142F187D43B000BE97BF /* ittgameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ittgameTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		652C13F3187D43B000BE97BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				652C1402187D43B000BE97BF /* OpenGLES.framework in Frameworks */,
+				652C13FC187D43B000BE97BF /* CoreGraphics.framework in Frameworks */,
+				652C13FE187D43B000BE97BF /* UIKit.framework in Frameworks */,
+				652C1400187D43B000BE97BF /* GLKit.framework in Frameworks */,
+				652C13FA187D43B000BE97BF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		652C141F187D43B000BE97BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				652C1424187D43B000BE97BF /* XCTest.framework in Frameworks */,
+				652C1426187D43B000BE97BF /* UIKit.framework in Frameworks */,
+				652C1425187D43B000BE97BF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		652C13ED187D43B000BE97BF = {
+			isa = PBXGroup;
+			children = (
+				652C1403187D43B000BE97BF /* ittgame */,
+				652C1429187D43B000BE97BF /* ittgameTests */,
+				652C13F8187D43B000BE97BF /* Frameworks */,
+				652C13F7187D43B000BE97BF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		652C13F7187D43B000BE97BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				652C13F6187D43B000BE97BF /* ittgame.app */,
+				652C1422187D43B000BE97BF /* ittgameTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		652C13F8187D43B000BE97BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				652C13F9187D43B000BE97BF /* Foundation.framework */,
+				652C13FB187D43B000BE97BF /* CoreGraphics.framework */,
+				652C13FD187D43B000BE97BF /* UIKit.framework */,
+				652C13FF187D43B000BE97BF /* GLKit.framework */,
+				652C1401187D43B000BE97BF /* OpenGLES.framework */,
+				652C1423187D43B000BE97BF /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		652C1403187D43B000BE97BF /* ittgame */ = {
+			isa = PBXGroup;
+			children = (
+				652C140C187D43B000BE97BF /* AppDelegate.h */,
+				652C140D187D43B000BE97BF /* AppDelegate.m */,
+				652C140F187D43B000BE97BF /* Main_iPhone.storyboard */,
+				652C1412187D43B000BE97BF /* Main_iPad.storyboard */,
+				652C1415187D43B000BE97BF /* Shader.fsh */,
+				652C1417187D43B000BE97BF /* Shader.vsh */,
+				652C1419187D43B000BE97BF /* ViewController.h */,
+				652C141A187D43B000BE97BF /* ViewController.m */,
+				652C141C187D43B000BE97BF /* Images.xcassets */,
+				652C1404187D43B000BE97BF /* Supporting Files */,
+			);
+			path = ittgame;
+			sourceTree = "<group>";
+		};
+		652C1404187D43B000BE97BF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				652C1405187D43B000BE97BF /* ittgame-Info.plist */,
+				652C1406187D43B000BE97BF /* InfoPlist.strings */,
+				652C1409187D43B000BE97BF /* main.m */,
+				652C140B187D43B000BE97BF /* ittgame-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		652C1429187D43B000BE97BF /* ittgameTests */ = {
+			isa = PBXGroup;
+			children = (
+				652C142F187D43B000BE97BF /* ittgameTests.m */,
+				652C142A187D43B000BE97BF /* Supporting Files */,
+			);
+			path = ittgameTests;
+			sourceTree = "<group>";
+		};
+		652C142A187D43B000BE97BF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				652C142B187D43B000BE97BF /* ittgameTests-Info.plist */,
+				652C142C187D43B000BE97BF /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		652C13F5187D43B000BE97BF /* ittgame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 652C1433187D43B000BE97BF /* Build configuration list for PBXNativeTarget "ittgame" */;
+			buildPhases = (
+				652C13F2187D43B000BE97BF /* Sources */,
+				652C13F3187D43B000BE97BF /* Frameworks */,
+				652C13F4187D43B000BE97BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ittgame;
+			productName = ittgame;
+			productReference = 652C13F6187D43B000BE97BF /* ittgame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		652C1421187D43B000BE97BF /* ittgameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 652C1436187D43B000BE97BF /* Build configuration list for PBXNativeTarget "ittgameTests" */;
+			buildPhases = (
+				652C141E187D43B000BE97BF /* Sources */,
+				652C141F187D43B000BE97BF /* Frameworks */,
+				652C1420187D43B000BE97BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				652C1428187D43B000BE97BF /* PBXTargetDependency */,
+			);
+			name = ittgameTests;
+			productName = ittgameTests;
+			productReference = 652C1422187D43B000BE97BF /* ittgameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		652C13EE187D43B000BE97BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = shaofa;
+				TargetAttributes = {
+					652C1421187D43B000BE97BF = {
+						TestTargetID = 652C13F5187D43B000BE97BF;
+					};
+				};
+			};
+			buildConfigurationList = 652C13F1187D43B000BE97BF /* Build configuration list for PBXProject "ittgame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 652C13ED187D43B000BE97BF;
+			productRefGroup = 652C13F7187D43B000BE97BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				652C13F5187D43B000BE97BF /* ittgame */,
+				652C1421187D43B000BE97BF /* ittgameTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		652C13F4187D43B000BE97BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				652C1416187D43B000BE97BF /* Shader.fsh in Resources */,
+				652C1414187D43B000BE97BF /* Main_iPad.storyboard in Resources */,
+				652C1411187D43B000BE97BF /* Main_iPhone.storyboard in Resources */,
+				652C141D187D43B000BE97BF /* Images.xcassets in Resources */,
+				652C1408187D43B000BE97BF /* InfoPlist.strings in Resources */,
+				652C1418187D43B000BE97BF /* Shader.vsh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		652C1420187D43B000BE97BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				652C142E187D43B000BE97BF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		652C13F2187D43B000BE97BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				652C141B187D43B000BE97BF /* ViewController.m in Sources */,
+				652C140E187D43B000BE97BF /* AppDelegate.m in Sources */,
+				652C140A187D43B000BE97BF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		652C141E187D43B000BE97BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				652C1430187D43B000BE97BF /* ittgameTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		652C1428187D43B000BE97BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 652C13F5187D43B000BE97BF /* ittgame */;
+			targetProxy = 652C1427187D43B000BE97BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		652C1406187D43B000BE97BF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				652C1407187D43B000BE97BF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		652C140F187D43B000BE97BF /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				652C1410187D43B000BE97BF /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		652C1412187D43B000BE97BF /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				652C1413187D43B000BE97BF /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		652C142C187D43B000BE97BF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				652C142D187D43B000BE97BF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		652C1431187D43B000BE97BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		652C1432187D43B000BE97BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		652C1434187D43B000BE97BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ittgame/ittgame-Prefix.pch";
+				INFOPLIST_FILE = "ittgame/ittgame-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		652C1435187D43B000BE97BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ittgame/ittgame-Prefix.pch";
+				INFOPLIST_FILE = "ittgame/ittgame-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		652C1437187D43B000BE97BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ittgame.app/ittgame";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ittgame/ittgame-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ittgameTests/ittgameTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		652C1438187D43B000BE97BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ittgame.app/ittgame";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ittgame/ittgame-Prefix.pch";
+				INFOPLIST_FILE = "ittgameTests/ittgameTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		652C13F1187D43B000BE97BF /* Build configuration list for PBXProject "ittgame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				652C1431187D43B000BE97BF /* Debug */,
+				652C1432187D43B000BE97BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		652C1433187D43B000BE97BF /* Build configuration list for PBXNativeTarget "ittgame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				652C1434187D43B000BE97BF /* Debug */,
+				652C1435187D43B000BE97BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		652C1436187D43B000BE97BF /* Build configuration list for PBXNativeTarget "ittgameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				652C1437187D43B000BE97BF /* Debug */,
+				652C1438187D43B000BE97BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 652C13EE187D43B000BE97BF /* Project object */;
+}

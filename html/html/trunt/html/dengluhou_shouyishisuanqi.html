@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+<meta name="format-detection"content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<link href="../css/index.css" rel="stylesheet" type="text/css">
+<link href="../css/jquery.ui.all.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../js/lib/jquery/1.9.1/jquery.js"></script>
+<script src="../js/lib/jquery/jquery.ui.core.js"></script>
+<script src="../js/lib/jquery/jquery.ui.widget.js"></script>
+<script src="../js/lib/jquery/jquery.ui.mouse.js"></script>
+<script src="../js/lib/jquery/jquery.ui.slider.js"></script>
+<script type="text/javascript" src="../js/lib/jquery/jquery.ba-resize.min.js"></script>
+<script type="text/javascript" src="../js/item/zzb.js"></script>
+</head>
+<body>
+<div class="j-main j-main02">
+    <div class="j-topCon">
+        <div class="j-top">
+            <h2>建信增值宝</h2>
+            <a href="javascript:void(0)" class="nav">菜单</a>
+            <a href="dengluqian.html" class="quit">登出</a>
+        </div>
+    </div>
+    <div class="j-totCon"><div class="hd"></div><div class="bd"></div></div>
+    <div class="j-wrapCon">
+        <div class="j-wrap">
+            <div class="bd">
+                <div class="user">
+                    <div class="avatar">
+                        <img src="../images/avatar.png" />
+                    </div>
+                    <p><em>艾青</em><i class="phone">186****4120</i></p>
+                    <p><span>上次登录时间:</span><i class="time">2013-09-13  15:51:24</i></p>
+                </div>
+                <p class="syssTit">收益试算</p>
+                <div class="syssCon">
+                    <div class="syssMain">
+                        <div class="zzbsy">
+                            <p class="money">448.66元</p>
+                            <p>增值宝年收益</p>
+                        </div>
+                        <div class="banksy">
+                            <p class="money">35元</p>
+                            <p>银行活期年利息</p>
+                        </div>
+                        <div class="bs">12</div>
+                    </div>
+                    <div class="jsq">
+                        <div id="slider-range-min"></div>
+                        <div class="leftCon">100元</div>
+                        <div class="rightCon">100000元</div>
+                    </div>
+                    <script>
+                    $(function() {
+                        $( "#slider-range-min" ).slider({
+                            range: "min",
+                            value: 50000,
+                            min: 1,
+                            max: 100000,
+                            change: function( event, ui ){
+                                var left = (parseInt($('.ui-slider-handle').css('left'))/parseInt($('#slider-range-min').css('width'))) *100;
+                                $('#amount').css({'left':left+'%','top':'15px'}).html(''+ui.value+'元');
+                                if(parseInt($('#amount').css('left')) < 70){
+                                    $('#amount').addClass('amount01').css('marginLeft','0px');
+                                }else{
+                                    $('#amount').removeClass('amount01').css('marginLeft','-70px');
+                                }
+                            }
+                        });
+                        $('#slider-range-min').append('<div class="amount" id="amount"></div>')
+                        var left = (parseInt($('.ui-slider-handle').css('left'))/parseInt($('#slider-range-min').css('width'))) *100;
+                                $('#amount').css({'left':left+'%','top':'15px'}).html(''+$( "#slider-range-min" ).slider( "value" )+'元');
+                    });
+                    </script>
+                </div>
+                <p class="btn">
+                    <a class="gotoIndex" style="margin: 1em 0;" href="cunruye.html">开始赚钱</a>
+                </p>
+            </div>
+            <div class="fd"></div>
+        </div>
+    </div>
+    <div class="fotCon">
+        <div class="bd">
+            <div class="menuToolCon">
+                <div class="menuToolWrap">
+                    <div class="menuCxCon">
+                        <ul class="menuToolList">
+                            <li><a href="cunruzengzhibao.html" class="cr">存入</a></li>
+                            <li><a href="quxianzengzhibao.html" class="qx">取现</a></li>
+                            <li><a href="javascript:void(0)" class="cx">查询</a></li>
+                            <li><a href="javascript:void(0)" class="wdzh">我的账户</a></li>
+                        </ul>
+                    </div>
+                    <div class="ui-myNav hide">
+                        <ul class="menuToolList">
+                            <li><a href="zhanghuziliaoxiugai.html" class="zlxg">账户资料</a></li>
+                            <li><a href="jiaoyimimaxiugai.html" class="mmxg">密码修改</a></li>
+                            <li><a href="wodeyinhangka.html" class="wdyhk">我的银行卡</a></li>
+                            <li><a href="fengxianpinggu.html" class="fxpg">风险评估</a></li>
+                        </ul>
+                    </div>
+                    <div class="ui-cxNav hide">
+                        <ul class="menuToolList">
+                            <li><a href="mingxichaxun.html" class="jymx">交易明细</a></li>
+                            <li><a href="jijinhangqing.html" class="jjhq">基金行情</a></li>
+                            <li><a href="xiaoxizhongxin.html" class="wdxx">我的消息</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="icon01"></div>
+                <div class="icon02"></div>
+                <div class="icon03"></div>
+                <div class="icon04"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="leftNav">
+    <h3 class="tit">更多</h3>
+    <ul class="leftNavList">
+        <li><a href="ruhekaihu.html"><em>如何开户</em></a></li>
+        <li><a href="ruheguanlizhanghu.html"><em>如何管理账户</em></a></li>
+        <li><a href="jijinjichuzhishi.html"><em>基金基础知识</em></a></li>
+        <li><a href="jianxinzengzhibao.html"><em>什么是增值宝</em></a></li>
+        <li><a href="jiaoyixiangguanwenti.html"><em>交易相关问题</em></a></li>
+    </ul>
+    <div class="lnhr"></div>
+    <ul class="leftNavList">
+        <li><a href="geiwomentiyijian.html"><em>给我们提意见</em></a></li>
+        <li><a href="tuijiangeihaoyou.html"><em>觉得不错，推荐给好友</em></a></li>
+        <li><a href="javascript:void(0)"><em>喜欢，给个好评</em></a></li>
+        <li><a href="guanyuwomen.html"><em>关于我们</em></a></li>
+    </ul>
+</div>
+</body>
+</html>

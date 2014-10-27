@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0" name="viewport" />
+<meta content="yes" name="apple-mobile-web-app-capable" /> 
+<meta content="black" name="apple-mobile-web-app-status-bar-style" /> 
+<meta content="telephone=no" name="format-detection" /> 
+<link href="../css/main.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../js/lib/jquery/1.9.1/jquery.js"></script>
+<script type="text/javascript" src="../js/lib/jquery/jquery.ba-resize.min.js"></script>
+<script type="text/javascript" src="../js/item/main.js"></script>
+</head>
+<body>
+<div class="hd">
+	<h2>交易开户</h2>
+	<a onclick="finish();" href="javascript:history.go(-1);" class="goback fl">返回</a>
+</div>
+<div class="bd">
+	<div class="con crqr jykh">
+		<ul id="breadcrumbs-one">
+			<li><a class="cur" href="javascript:void(0)"><i class="i01">1</i>身份验证</a></li>
+			<li><a href="javascript:void(0)"><i class="i02">2</i>填写资料</a></li>
+			<li><a class="current" href="javascript:void(0)"><i class="i03">3</i>开户成功</a></li>
+		</ul>
+		<div class="loginForm">
+			<div class="loginInput">
+				<label>选择银行</label>
+				<div class="inputCon">
+					<a class="select ui-selectBtn" href="javascript:void(0)"><i>工商银行 9471</i></a>
+				</div>
+				<ul class="selectList ui-selectList">
+					<li>工商银行 9471</li>
+					<li>建设银行 9471</li>
+					<li>中国银行 9471</li>
+				</ul>
+			</div>
+			<div class="loginInput">
+				<label for="yhkh">银行卡号</label>
+				<div class="inputCon">
+					<input type="text" name="yhkh" id="yhkh"> 
+				</div>
+			</div>
+		</div>
+		<div class="hr"></div>
+		<div class="loginForm">
+			<div class="loginInput">
+				<label for="zsxm">真实姓名</label>
+				<div class="inputCon">
+					<input type="text" name="zsxm" id="zsxm"> 
+				</div>
+			</div>
+			<div class="loginInput">
+				<label>证件类型</label>
+				<div class="inputCon">
+					<a class="select ui-selectBtn" href="javascript:void(0)"><i>身份证</i></a>
+				</div>
+				<ul class="selectList ui-selectList">
+					<li>身份证</li>
+					<li>通行证</li>
+					<li>护照</li>
+				</ul>
+			</div>
+			<div class="loginInput">
+				<label for="zjhm">证件号码</label>
+				<div class="inputCon">
+					<input type="text" name="zjhm" id="zjhm"> 
+				</div>
+			</div>
+		</div>
+		<div class="hr"></div>
+		<div class="loginForm">
+			<div class="loginInput">
+				<label class="long" for="phone">银行预留手机号</label>
+				<div class="inputConPhone">
+					<input type="text" name="phone" id="phone"> 
+				</div>
+			</div>
+			<div class="loginInput">
+				<label for="sms">短信验证码</label>
+				<div class="fr btnBg"><a class="getSms" href="javascript:void(0)">获取</a></div>
+				<div class="inputConSms">
+					<input type="text" name="sms" id="sms">
+				</div>
+			</div>
+			<div class="loginStatus">
+				<a class="rmUse fgUse" href="javascript:void(0)">我已阅读并同意以下协议</a>
+			</div>
+			<p class="btn">
+				<a class="gotoIndex" href="jiaoyikaihu02.html">下一步</a>
+			</p>
+		</div>
+	</div>
+</div>
+</body>
+</html>

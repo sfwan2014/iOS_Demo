@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0" name="viewport" />
+<meta content="yes" name="apple-mobile-web-app-capable" /> 
+<meta content="black" name="apple-mobile-web-app-status-bar-style" /> 
+<meta content="telephone=no" name="format-detection" /> 
+<link href="../js/lib/jquery/jqplot/jquery.jqplot.min.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../js/lib/jquery/jqplot/jquery.min.js"></script>
+<script type="text/javascript" src="../js/lib/jquery/jqplot/jquery.jqplot.min.js"></script>
+<script type="text/javascript" src="../js/lib/jquery/jqplot/jqplot.highlighter.min.js"></script>
+<script type="text/javascript" src="../js/lib/jquery/jqplot/jqplot.cursor.min.js"></script>
+<script type="text/javascript" src="../js/lib/jquery/jqplot/jqplot.dateAxisRenderer.min.js"></script>
+</head>
+<body>
+<div id="chart1" style="height:230px; width:100%;"></div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+   var line1=[
+    ['09-09', 13],
+    ['09-10', 24],
+    ['09-11', 38],
+    ['09-12', 27],
+    ['09-13', 53],
+    ['09-14', 67],
+    ['09-15', 99]
+    ];
+  var plot1 = $.jqplot('chart1', [line1], {
+      axes:{
+        xaxis:{
+          ticks: ['09-08','09-09','09-10','09-11','09-12','09-13','09-14','09-15','09-16'],
+          renderer:$.jqplot.DateAxisRenderer,
+          tickOptions:{
+            formatString:'%m.%d',
+            showGridline: false,
+            markSize: 0,
+            pad:1.5
+          }
+        },
+        yaxis:{
+          showTicks: false,
+          tickOptions:{
+            formatString:'%.2f元'
+          },
+          min:0,
+          pad:1.5
+        }
+      },
+      series:[{color:'#ff8322',markerOptions:{style:'circle'}}],
+      grid:{
+        drawGridLines: true, 
+        gridLineColor: '#f0f1f3',
+        background: '#fff',
+        borderColor: '#f0f1f3',
+        borderWidth: 1, 
+        shadowAngle: 0,
+        shadowOffset: 0,
+        shadowWidth: 0,
+        shadowDepth: 0, 
+        shadowAlpha: 0, 
+        renderer: $.jqplot.CanvasGridRenderer,
+        rendererOptions: {} 
+      },
+      highlighter: {
+        show: true,
+        tooltipAxes :'y',
+        tooltipLocation: 's'
+      },
+      cursor: {
+        show: false
+      }
+  });
+});
+</script>
+</body>
+</html>

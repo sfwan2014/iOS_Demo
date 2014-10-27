@@ -1,0 +1,221 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+<meta name="format-detection"content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<link href="../css/index.css" rel="stylesheet" type="text/css">
+
+<link href="../js/lib/mobiscroll/mobiscroll.core-2.5.2.css" rel="stylesheet" type="text/css" />
+<link href="../js/lib/mobiscroll/mobiscroll.animation-2.5.2.css" rel="stylesheet" type="text/css" />
+<link href="../js/lib/mobiscroll/mobiscroll.ios-2.5.1.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+<div class="j-main">
+    <div class="j-topCon">
+        <div class="j-top">
+            <h2>取现增值宝</h2>
+            <a href="javascript:void(0)" class="goback">返回</a>
+        </div>
+    </div>
+    <div class="j-totCon"><div class="hd"></div><div class="bd"></div></div>
+    <div class="j-wrapCon">
+        <div class="j-wrap">
+            <div class="bd">
+                <div class="loginForm mtl15">
+                    <div class="loginInput">
+                        <label>到账账户：</label>
+                        <div class="inputCon">
+                            <select class="sel">
+                                <option>建设银行 9471</option>
+                                <option>华夏银行 9471</option>
+                                <option>招商银行 9471</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="loginInput">
+                        <label for="crMoney">可取金额：</label>
+                        <div class="inputCon">
+                            <i class="txt"><em class="cfa6f0b">30000.00</em> 元</i>
+                        </div>
+                    </div>
+                    <div class="wxFormList">
+                        <div class="tit">
+                            取现金额：
+                        </div>
+                        <div class="text">元</div>
+                        <div class="sCon">
+                            <input type="text" class="sText tr cfa6f0b">
+                        </div>
+                    </div>
+                    <div class="loginInput cbbbbbb">
+                        <label class="cbbbbbb">　手续费：</label>
+                        <div class="inputCon">
+                            <i class="txt">0.00 元</i>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="tit">取现方式</h3>
+                <ul class="menuList ui-tab-menu">
+                    <li class="cur"><a href="javascript:void(0)">实时</a></li>
+                    <li><a href="javascript:void(0)">定期</a></li>
+                    <li><a href="javascript:void(0)">预约</a></li>
+                </ul>
+                <div class="menuCon ui-tab-con">
+                    <div class="ui-tab-item">
+                        <p class="btn">
+                            <a class="gotoIndex" href="quxianqueren.html">取现</a>
+                        </p>
+                        <dl class="promptDl">
+                            <dt>温馨提示</dt>
+                            <dd><em>1、</em><span>增值宝取现等同于赎回建信货币基金，取现金额最小为0.01元。</span></dd>
+                            <dd><em>2、</em><span>实时取现最快1秒到账，每日额度为50万，超过50万系统将自动转换为普通取现。</span></dd>
+                            <dd><em>3、</em><span>每个交易日的普通取现申请至15:00截止，当日15：00前普通取现，次交易日到账，无手续费，15:00以后的交易申请或非交易日的交易申请视为于下一个交易日提交。</span></dd>
+                            <dd><em>4、</em><span>增值宝取现目前遵循同卡进出原则，不能选择到账其他银行卡。</span></dd>
+                        </dl>
+                    </div>
+                    <div class="ui-tab-item hide">
+                        <dl class="dqcrList">
+                            <dt>定期周期：</dt>
+                            <dd>
+                                <select class="sel">
+                                    <option>一月</option>
+                                    <option>两周</option>
+                                    <option>一周</option>
+                                </select>
+                                <!-- <a class="select ui-selectBtn" href="javascript:void(0)"><i>一月</i></a> -->
+                            </dd>
+                            <ul class="selectList ui-selectList">
+                                <!-- <li>一月</li>
+                                <li>二月</li>
+                                <li>三月</li> -->
+                            </ul>
+                        </dl>
+                        <dl class="dqcrList">
+                            <dt>开始存入日期：</dt>
+                            <dd><input type="text" class="dateInput appDate" name="appDate"></dd>
+                        </dl>
+                        <dl class="dqcrList">
+                            <dt>选择计划终止条件：</dt>
+                            <dd>
+                                <select class="sel ui-zztj">
+                                    <option value="1">设置终止时间</option>
+                                    <option value="2">设置终止金额</option>
+                                    <option value="3">设置总期数</option>
+                                </select>
+                                <!-- <a class="select ui-selectBtn" href="javascript:void(0)"><i>设置终止时间</i></a> -->
+                            </dd>
+                            <!-- <ul class="selectList ui-selectList">
+                                <li>设置终止时间</li>
+                                <li>设置终止金额</li>
+                            </ul> -->
+                        </dl>
+                        <dl class="dqcrList">
+                            <dt>设置计划终止参数：</dt>
+                            <dd>
+                                <div class="ui-zztj-time">
+                                    <input type="text" class="dateInput appDate" name="appDate">
+                                </div>
+                                <div class="ui-zztj-txt hide">
+                                    <input type="text" class="hasDatepicker">
+                                </div>
+                            </dd>
+                        </dl>
+                        <p class="btn">
+                            <a class="gotoIndex" href="quxianqueren_dq.html">取现</a>
+                        </p>
+                    </div>
+                    <div class="ui-tab-item hide">
+                        <dl class="dqcrList">
+                            <dt>预约周期：</dt>
+                            <dd>
+                                <select class="sel">
+                                    <option>一月</option>
+                                    <option>两周</option>
+                                    <option>一周</option>
+                                </select>
+                            </dd>
+                        </dl>
+                        <dl class="dqcrList">
+                            <dt>开始存入日期：</dt>
+                            <dd><input type="text" class="dateInput appDate" name="appDate"></dd>
+                        </dl>
+                        <dl class="dqcrList">
+                            <dt>选择计划终止条件：</dt>
+                            <dd>
+                                <select class="sel ui-zztj">
+                                    <option value="1">设置终止时间</option>
+                                    <option value="2">设置终止金额</option>
+                                    <option value="3">设置总期数</option>
+                                </select>
+                            </dd>
+                        </dl>
+                        <dl class="dqcrList">
+                            <dt>设置计划终止参数：</dt>
+                            <dd>
+                                <div class="ui-zztj-time">
+                                    <input type="text" class="dateInput appDate" name="appDate">
+                                </div>
+                                <div class="ui-zztj-txt hide">
+                                    <input type="text" class="hasDatepicker">
+                                </div>
+                            </dd>
+                        </dl>
+                        <p class="btn">
+                            <a class="gotoIndex" href="quxianqueren_yy.html">取现</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="fd"></div>
+        </div>
+    </div>
+    <div class="j-botCon"><div class="bd"></div></div>
+</div>
+<script type="text/javascript" src="../js/lib/jquery/jqplot/jquery.min.js"></script>
+<script type="text/javascript" src="../js/lib/jquery/jquery.ba-resize.min.js"></script>
+
+
+<script src="../js/lib/mobiscroll/mobiscroll.core-2.5.2.js" type="text/javascript"></script>
+<script src="../js/lib/mobiscroll/mobiscroll.core-2.5.2-zh.js" type="text/javascript"></script>
+
+
+<script src="../js/lib/mobiscroll/mobiscroll.datetime-2.5.1.js" type="text/javascript"></script>
+<script src="../js/lib/mobiscroll/mobiscroll.datetime-2.5.1-zh.js" type="text/javascript"></script>
+
+<!-- S 可根据自己喜好引入样式风格文件 -->
+<script src="../js/lib/mobiscroll/mobiscroll.ios-2.5.1.js" type="text/javascript"></script>
+<!-- E 可根据自己喜好引入样式风格文件 -->
+
+<script type="text/javascript" src="../js/item/zzb.js"></script>
+
+<script type="text/javascript">
+$(function () {
+    var currYear = (new Date()).getFullYear();  
+    var opt={};
+    opt.date = {preset : 'date'};
+    opt.datetime = {preset : 'datetime'};
+    opt.time = {preset : 'time'};
+    opt.default = {
+    theme: 'ios light', //皮肤样式
+    display: 'modal', //显示方式 
+    mode: 'scroller', //日期选择模式
+    lang:'zh',
+    startYear:currYear - 10, //开始年份
+    endYear:currYear + 10, //结束年份
+    onBeforeShow: function (inst) {
+        $('.j-topCon,.j-fotCon,.j-botCon,.j-totCon').css({'position':'absolute'});
+    },
+    onClose: function (inst) {
+        $('.j-topCon,.j-fotCon,.j-botCon,.j-totCon').css({'position':'fixed'});
+    }
+    };
+
+    $(".appDate").val('').scroller('destroy').scroller($.extend(opt['date'], opt['default']));
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,653 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F037E1A81964F0F7001F78C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F037E1A71964F0F7001F78C0 /* Foundation.framework */; };
+		F037E1AA1964F0F7001F78C0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F037E1A91964F0F7001F78C0 /* CoreGraphics.framework */; };
+		F037E1AC1964F0F7001F78C0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F037E1AB1964F0F7001F78C0 /* UIKit.framework */; };
+		F037E1B21964F0F7001F78C0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F037E1B01964F0F7001F78C0 /* InfoPlist.strings */; };
+		F037E1B41964F0F7001F78C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F037E1B31964F0F7001F78C0 /* main.m */; };
+		F037E1B81964F0F7001F78C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F037E1B71964F0F7001F78C0 /* AppDelegate.m */; };
+		F037E1BA1964F0F7001F78C0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F037E1B91964F0F7001F78C0 /* Images.xcassets */; };
+		F037E1C11964F0F7001F78C0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F037E1C01964F0F7001F78C0 /* XCTest.framework */; };
+		F037E1C21964F0F7001F78C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F037E1A71964F0F7001F78C0 /* Foundation.framework */; };
+		F037E1C31964F0F7001F78C0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F037E1AB1964F0F7001F78C0 /* UIKit.framework */; };
+		F037E1CB1964F0F7001F78C0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F037E1C91964F0F7001F78C0 /* InfoPlist.strings */; };
+		F037E1CD1964F0F7001F78C0 /* iflyMSCDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F037E1CC1964F0F7001F78C0 /* iflyMSCDemoTests.m */; };
+		F037E1DB1964F102001F78C0 /* ZCNoneiFLYTEK.m in Sources */ = {isa = PBXBuildFile; fileRef = F037E1D91964F102001F78C0 /* ZCNoneiFLYTEK.m */; };
+		F037E1DD1964F164001F78C0 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F037E1DC1964F164001F78C0 /* libz.dylib */; };
+		F037E1DF1964F16B001F78C0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F037E1DE1964F16B001F78C0 /* AudioToolbox.framework */; };
+		F037E1E11964F172001F78C0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F037E1E01964F172001F78C0 /* SystemConfiguration.framework */; };
+		F037E1E31964F177001F78C0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F037E1E21964F177001F78C0 /* QuartzCore.framework */; };
+		F037E1E51964F17F001F78C0 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F037E1E41964F17F001F78C0 /* AddressBook.framework */; };
+		F037E1E71964F187001F78C0 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F037E1E61964F187001F78C0 /* AdSupport.framework */; };
+		F037E1EB1964F1EB001F78C0 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F037E1E91964F1EB001F78C0 /* RootViewController.m */; };
+		F037E1EC1964F1EB001F78C0 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F037E1EA1964F1EB001F78C0 /* RootViewController.xib */; };
+		F037E1F41964FC54001F78C0 /* iflyMSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F037E1F31964FC54001F78C0 /* iflyMSC.framework */; };
+		F07CFBA219665A410067AC2B /* HJCFRecordProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = F07CFBA119665A410067AC2B /* HJCFRecordProvider.m */; };
+		F07CFBA419665B090067AC2B /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F07CFBA319665B090067AC2B /* CoreAudio.framework */; };
+		F07CFBA619665B5C0067AC2B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F07CFBA519665B5C0067AC2B /* AVFoundation.framework */; };
+		F07CFBAE1966918E0067AC2B /* HJCFRecordTools.m in Sources */ = {isa = PBXBuildFile; fileRef = F07CFBAD1966918E0067AC2B /* HJCFRecordTools.m */; };
+		F07CFBB1196692260067AC2B /* HJCFAudioTurnFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = F07CFBB0196692260067AC2B /* HJCFAudioTurnFormat.m */; };
+		F07CFBB51966986F0067AC2B /* ReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F07CFBB31966986F0067AC2B /* ReviewViewController.m */; };
+		F07CFBB61966986F0067AC2B /* ReviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F07CFBB41966986F0067AC2B /* ReviewViewController.xib */; };
+		F07CFBC819669EBD0067AC2B /* amrFileCodec.mm in Sources */ = {isa = PBXBuildFile; fileRef = F07CFBBA19669EBD0067AC2B /* amrFileCodec.mm */; };
+		F07CFBC919669EBD0067AC2B /* wav.mm in Sources */ = {isa = PBXBuildFile; fileRef = F07CFBBC19669EBD0067AC2B /* wav.mm */; };
+		F07CFBCA19669EBD0067AC2B /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F07CFBBE19669EBD0067AC2B /* libopencore-amrnb.a */; };
+		F07CFBCB19669EBD0067AC2B /* libopencore-amrwb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F07CFBBF19669EBD0067AC2B /* libopencore-amrwb.a */; };
+		F07CFBCC19669EBD0067AC2B /* VoiceConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = F07CFBC719669EBD0067AC2B /* VoiceConverter.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F037E1C41964F0F7001F78C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F037E19C1964F0F7001F78C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F037E1A31964F0F7001F78C0;
+			remoteInfo = iflyMSCDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F037E1A41964F0F7001F78C0 /* iflyMSCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iflyMSCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F037E1A71964F0F7001F78C0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F037E1A91964F0F7001F78C0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F037E1AB1964F0F7001F78C0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F037E1AF1964F0F7001F78C0 /* iflyMSCDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iflyMSCDemo-Info.plist"; sourceTree = "<group>"; };
+		F037E1B11964F0F7001F78C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F037E1B31964F0F7001F78C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F037E1B51964F0F7001F78C0 /* iflyMSCDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iflyMSCDemo-Prefix.pch"; sourceTree = "<group>"; };
+		F037E1B61964F0F7001F78C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F037E1B71964F0F7001F78C0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F037E1B91964F0F7001F78C0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F037E1BF1964F0F7001F78C0 /* iflyMSCDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iflyMSCDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F037E1C01964F0F7001F78C0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F037E1C81964F0F7001F78C0 /* iflyMSCDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iflyMSCDemoTests-Info.plist"; sourceTree = "<group>"; };
+		F037E1CA1964F0F7001F78C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F037E1CC1964F0F7001F78C0 /* iflyMSCDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iflyMSCDemoTests.m; sourceTree = "<group>"; };
+		F037E1D81964F102001F78C0 /* ZCNoneiFLYTEK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCNoneiFLYTEK.h; sourceTree = "<group>"; };
+		F037E1D91964F102001F78C0 /* ZCNoneiFLYTEK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCNoneiFLYTEK.m; sourceTree = "<group>"; };
+		F037E1DC1964F164001F78C0 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		F037E1DE1964F16B001F78C0 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F037E1E01964F172001F78C0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F037E1E21964F177001F78C0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F037E1E41964F17F001F78C0 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		F037E1E61964F187001F78C0 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		F037E1E81964F1EB001F78C0 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		F037E1E91964F1EB001F78C0 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		F037E1EA1964F1EB001F78C0 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		F037E1F31964FC54001F78C0 /* iflyMSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iflyMSC.framework; sourceTree = "<group>"; };
+		F07CFBA019665A410067AC2B /* HJCFRecordProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJCFRecordProvider.h; sourceTree = "<group>"; };
+		F07CFBA119665A410067AC2B /* HJCFRecordProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJCFRecordProvider.m; sourceTree = "<group>"; };
+		F07CFBA319665B090067AC2B /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		F07CFBA519665B5C0067AC2B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F07CFBAC1966918E0067AC2B /* HJCFRecordTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJCFRecordTools.h; sourceTree = "<group>"; };
+		F07CFBAD1966918E0067AC2B /* HJCFRecordTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJCFRecordTools.m; sourceTree = "<group>"; };
+		F07CFBAF196692260067AC2B /* HJCFAudioTurnFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJCFAudioTurnFormat.h; sourceTree = "<group>"; };
+		F07CFBB0196692260067AC2B /* HJCFAudioTurnFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJCFAudioTurnFormat.m; sourceTree = "<group>"; };
+		F07CFBB21966986F0067AC2B /* ReviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReviewViewController.h; sourceTree = "<group>"; };
+		F07CFBB31966986F0067AC2B /* ReviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReviewViewController.m; sourceTree = "<group>"; };
+		F07CFBB41966986F0067AC2B /* ReviewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReviewViewController.xib; sourceTree = "<group>"; };
+		F07CFBB919669EBD0067AC2B /* amrFileCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = amrFileCodec.h; sourceTree = "<group>"; };
+		F07CFBBA19669EBD0067AC2B /* amrFileCodec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = amrFileCodec.mm; sourceTree = "<group>"; };
+		F07CFBBC19669EBD0067AC2B /* wav.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = wav.mm; sourceTree = "<group>"; };
+		F07CFBBE19669EBD0067AC2B /* libopencore-amrnb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrnb.a"; sourceTree = "<group>"; };
+		F07CFBBF19669EBD0067AC2B /* libopencore-amrwb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrwb.a"; sourceTree = "<group>"; };
+		F07CFBC119669EBD0067AC2B /* interf_dec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_dec.h; sourceTree = "<group>"; };
+		F07CFBC219669EBD0067AC2B /* interf_enc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_enc.h; sourceTree = "<group>"; };
+		F07CFBC419669EBD0067AC2B /* dec_if.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dec_if.h; sourceTree = "<group>"; };
+		F07CFBC519669EBD0067AC2B /* if_rom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_rom.h; sourceTree = "<group>"; };
+		F07CFBC619669EBD0067AC2B /* VoiceConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceConverter.h; sourceTree = "<group>"; };
+		F07CFBC719669EBD0067AC2B /* VoiceConverter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VoiceConverter.mm; sourceTree = "<group>"; };
+		F07CFBCD19669FDE0067AC2B /* wav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wav.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F037E1A11964F0F7001F78C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F07CFBA619665B5C0067AC2B /* AVFoundation.framework in Frameworks */,
+				F07CFBA419665B090067AC2B /* CoreAudio.framework in Frameworks */,
+				F037E1F41964FC54001F78C0 /* iflyMSC.framework in Frameworks */,
+				F037E1E71964F187001F78C0 /* AdSupport.framework in Frameworks */,
+				F037E1E51964F17F001F78C0 /* AddressBook.framework in Frameworks */,
+				F037E1E31964F177001F78C0 /* QuartzCore.framework in Frameworks */,
+				F037E1E11964F172001F78C0 /* SystemConfiguration.framework in Frameworks */,
+				F037E1DF1964F16B001F78C0 /* AudioToolbox.framework in Frameworks */,
+				F037E1DD1964F164001F78C0 /* libz.dylib in Frameworks */,
+				F07CFBCA19669EBD0067AC2B /* libopencore-amrnb.a in Frameworks */,
+				F037E1AA1964F0F7001F78C0 /* CoreGraphics.framework in Frameworks */,
+				F037E1AC1964F0F7001F78C0 /* UIKit.framework in Frameworks */,
+				F07CFBCB19669EBD0067AC2B /* libopencore-amrwb.a in Frameworks */,
+				F037E1A81964F0F7001F78C0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F037E1BC1964F0F7001F78C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F037E1C11964F0F7001F78C0 /* XCTest.framework in Frameworks */,
+				F037E1C31964F0F7001F78C0 /* UIKit.framework in Frameworks */,
+				F037E1C21964F0F7001F78C0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F037E19B1964F0F7001F78C0 = {
+			isa = PBXGroup;
+			children = (
+				F037E1AD1964F0F7001F78C0 /* iflyMSCDemo */,
+				F037E1C61964F0F7001F78C0 /* iflyMSCDemoTests */,
+				F037E1A61964F0F7001F78C0 /* Frameworks */,
+				F037E1A51964F0F7001F78C0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F037E1A51964F0F7001F78C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F037E1A41964F0F7001F78C0 /* iflyMSCDemo.app */,
+				F037E1BF1964F0F7001F78C0 /* iflyMSCDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F037E1A61964F0F7001F78C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F07CFBA519665B5C0067AC2B /* AVFoundation.framework */,
+				F07CFBA319665B090067AC2B /* CoreAudio.framework */,
+				F037E1E61964F187001F78C0 /* AdSupport.framework */,
+				F037E1E41964F17F001F78C0 /* AddressBook.framework */,
+				F037E1E21964F177001F78C0 /* QuartzCore.framework */,
+				F037E1E01964F172001F78C0 /* SystemConfiguration.framework */,
+				F037E1DE1964F16B001F78C0 /* AudioToolbox.framework */,
+				F037E1DC1964F164001F78C0 /* libz.dylib */,
+				F037E1A71964F0F7001F78C0 /* Foundation.framework */,
+				F037E1A91964F0F7001F78C0 /* CoreGraphics.framework */,
+				F037E1AB1964F0F7001F78C0 /* UIKit.framework */,
+				F037E1C01964F0F7001F78C0 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F037E1AD1964F0F7001F78C0 /* iflyMSCDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F037E1B61964F0F7001F78C0 /* AppDelegate.h */,
+				F037E1B71964F0F7001F78C0 /* AppDelegate.m */,
+				F037E1E81964F1EB001F78C0 /* RootViewController.h */,
+				F037E1E91964F1EB001F78C0 /* RootViewController.m */,
+				F037E1EA1964F1EB001F78C0 /* RootViewController.xib */,
+				F07CFBB21966986F0067AC2B /* ReviewViewController.h */,
+				F07CFBB31966986F0067AC2B /* ReviewViewController.m */,
+				F07CFBB41966986F0067AC2B /* ReviewViewController.xib */,
+				F037E1B91964F0F7001F78C0 /* Images.xcassets */,
+				F07CFB9F196659EB0067AC2B /* Record */,
+				F037E1D61964F102001F78C0 /* iflyMSC */,
+				F037E1AE1964F0F7001F78C0 /* Supporting Files */,
+			);
+			path = iflyMSCDemo;
+			sourceTree = "<group>";
+		};
+		F037E1AE1964F0F7001F78C0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F037E1AF1964F0F7001F78C0 /* iflyMSCDemo-Info.plist */,
+				F037E1B01964F0F7001F78C0 /* InfoPlist.strings */,
+				F037E1B31964F0F7001F78C0 /* main.m */,
+				F037E1B51964F0F7001F78C0 /* iflyMSCDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F037E1C61964F0F7001F78C0 /* iflyMSCDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				F037E1CC1964F0F7001F78C0 /* iflyMSCDemoTests.m */,
+				F037E1C71964F0F7001F78C0 /* Supporting Files */,
+			);
+			path = iflyMSCDemoTests;
+			sourceTree = "<group>";
+		};
+		F037E1C71964F0F7001F78C0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F037E1C81964F0F7001F78C0 /* iflyMSCDemoTests-Info.plist */,
+				F037E1C91964F0F7001F78C0 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F037E1D61964F102001F78C0 /* iflyMSC */ = {
+			isa = PBXGroup;
+			children = (
+				F037E1F31964FC54001F78C0 /* iflyMSC.framework */,
+				F037E1D81964F102001F78C0 /* ZCNoneiFLYTEK.h */,
+				F037E1D91964F102001F78C0 /* ZCNoneiFLYTEK.m */,
+			);
+			path = iflyMSC;
+			sourceTree = "<group>";
+		};
+		F07CFB9F196659EB0067AC2B /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				F07CFBB719669EBD0067AC2B /* VoiceConvert */,
+				F07CFBA019665A410067AC2B /* HJCFRecordProvider.h */,
+				F07CFBA119665A410067AC2B /* HJCFRecordProvider.m */,
+				F07CFBAC1966918E0067AC2B /* HJCFRecordTools.h */,
+				F07CFBAD1966918E0067AC2B /* HJCFRecordTools.m */,
+				F07CFBAF196692260067AC2B /* HJCFAudioTurnFormat.h */,
+				F07CFBB0196692260067AC2B /* HJCFAudioTurnFormat.m */,
+			);
+			path = Record;
+			sourceTree = "<group>";
+		};
+		F07CFBB719669EBD0067AC2B /* VoiceConvert */ = {
+			isa = PBXGroup;
+			children = (
+				F07CFBB819669EBD0067AC2B /* amrwapper */,
+				F07CFBBD19669EBD0067AC2B /* lib */,
+				F07CFBC019669EBD0067AC2B /* opencore-amrnb */,
+				F07CFBC319669EBD0067AC2B /* opencore-amrwb */,
+				F07CFBC619669EBD0067AC2B /* VoiceConverter.h */,
+				F07CFBC719669EBD0067AC2B /* VoiceConverter.mm */,
+			);
+			path = VoiceConvert;
+			sourceTree = "<group>";
+		};
+		F07CFBB819669EBD0067AC2B /* amrwapper */ = {
+			isa = PBXGroup;
+			children = (
+				F07CFBB919669EBD0067AC2B /* amrFileCodec.h */,
+				F07CFBBA19669EBD0067AC2B /* amrFileCodec.mm */,
+				F07CFBCD19669FDE0067AC2B /* wav.h */,
+				F07CFBBC19669EBD0067AC2B /* wav.mm */,
+			);
+			path = amrwapper;
+			sourceTree = "<group>";
+		};
+		F07CFBBD19669EBD0067AC2B /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				F07CFBBE19669EBD0067AC2B /* libopencore-amrnb.a */,
+				F07CFBBF19669EBD0067AC2B /* libopencore-amrwb.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		F07CFBC019669EBD0067AC2B /* opencore-amrnb */ = {
+			isa = PBXGroup;
+			children = (
+				F07CFBC119669EBD0067AC2B /* interf_dec.h */,
+				F07CFBC219669EBD0067AC2B /* interf_enc.h */,
+			);
+			path = "opencore-amrnb";
+			sourceTree = "<group>";
+		};
+		F07CFBC319669EBD0067AC2B /* opencore-amrwb */ = {
+			isa = PBXGroup;
+			children = (
+				F07CFBC419669EBD0067AC2B /* dec_if.h */,
+				F07CFBC519669EBD0067AC2B /* if_rom.h */,
+			);
+			path = "opencore-amrwb";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F037E1A31964F0F7001F78C0 /* iflyMSCDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F037E1D01964F0F7001F78C0 /* Build configuration list for PBXNativeTarget "iflyMSCDemo" */;
+			buildPhases = (
+				F037E1A01964F0F7001F78C0 /* Sources */,
+				F037E1A11964F0F7001F78C0 /* Frameworks */,
+				F037E1A21964F0F7001F78C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iflyMSCDemo;
+			productName = iflyMSCDemo;
+			productReference = F037E1A41964F0F7001F78C0 /* iflyMSCDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F037E1BE1964F0F7001F78C0 /* iflyMSCDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F037E1D31964F0F7001F78C0 /* Build configuration list for PBXNativeTarget "iflyMSCDemoTests" */;
+			buildPhases = (
+				F037E1BB1964F0F7001F78C0 /* Sources */,
+				F037E1BC1964F0F7001F78C0 /* Frameworks */,
+				F037E1BD1964F0F7001F78C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F037E1C51964F0F7001F78C0 /* PBXTargetDependency */,
+			);
+			name = iflyMSCDemoTests;
+			productName = iflyMSCDemoTests;
+			productReference = F037E1BF1964F0F7001F78C0 /* iflyMSCDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F037E19C1964F0F7001F78C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = sfwan;
+				TargetAttributes = {
+					F037E1BE1964F0F7001F78C0 = {
+						TestTargetID = F037E1A31964F0F7001F78C0;
+					};
+				};
+			};
+			buildConfigurationList = F037E19F1964F0F7001F78C0 /* Build configuration list for PBXProject "iflyMSCDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F037E19B1964F0F7001F78C0;
+			productRefGroup = F037E1A51964F0F7001F78C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F037E1A31964F0F7001F78C0 /* iflyMSCDemo */,
+				F037E1BE1964F0F7001F78C0 /* iflyMSCDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F037E1A21964F0F7001F78C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F037E1B21964F0F7001F78C0 /* InfoPlist.strings in Resources */,
+				F037E1BA1964F0F7001F78C0 /* Images.xcassets in Resources */,
+				F07CFBB61966986F0067AC2B /* ReviewViewController.xib in Resources */,
+				F037E1EC1964F1EB001F78C0 /* RootViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F037E1BD1964F0F7001F78C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F037E1CB1964F0F7001F78C0 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F037E1A01964F0F7001F78C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F07CFBC919669EBD0067AC2B /* wav.mm in Sources */,
+				F037E1B81964F0F7001F78C0 /* AppDelegate.m in Sources */,
+				F037E1B41964F0F7001F78C0 /* main.m in Sources */,
+				F07CFBB51966986F0067AC2B /* ReviewViewController.m in Sources */,
+				F07CFBCC19669EBD0067AC2B /* VoiceConverter.mm in Sources */,
+				F037E1EB1964F1EB001F78C0 /* RootViewController.m in Sources */,
+				F07CFBAE1966918E0067AC2B /* HJCFRecordTools.m in Sources */,
+				F037E1DB1964F102001F78C0 /* ZCNoneiFLYTEK.m in Sources */,
+				F07CFBC819669EBD0067AC2B /* amrFileCodec.mm in Sources */,
+				F07CFBB1196692260067AC2B /* HJCFAudioTurnFormat.m in Sources */,
+				F07CFBA219665A410067AC2B /* HJCFRecordProvider.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F037E1BB1964F0F7001F78C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F037E1CD1964F0F7001F78C0 /* iflyMSCDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F037E1C51964F0F7001F78C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F037E1A31964F0F7001F78C0 /* iflyMSCDemo */;
+			targetProxy = F037E1C41964F0F7001F78C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F037E1B01964F0F7001F78C0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F037E1B11964F0F7001F78C0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F037E1C91964F0F7001F78C0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F037E1CA1964F0F7001F78C0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F037E1CE1964F0F7001F78C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F037E1CF1964F0F7001F78C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F037E1D11964F0F7001F78C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Qing Ai (6X28CD2S7K)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iflyMSCDemo/iflyMSC",
+				);
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iflyMSCDemo/iflyMSCDemo-Prefix.pch";
+				INFOPLIST_FILE = "iflyMSCDemo/iflyMSCDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iflyMSCDemo/Record/VoiceConvert/lib",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F037E1D21964F0F7001F78C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iflyMSCDemo/iflyMSC",
+				);
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iflyMSCDemo/iflyMSCDemo-Prefix.pch";
+				INFOPLIST_FILE = "iflyMSCDemo/iflyMSCDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iflyMSCDemo/Record/VoiceConvert/lib",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F037E1D41964F0F7001F78C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iflyMSCDemo.app/iflyMSCDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iflyMSCDemo/iflyMSCDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iflyMSCDemoTests/iflyMSCDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F037E1D51964F0F7001F78C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iflyMSCDemo.app/iflyMSCDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iflyMSCDemo/iflyMSCDemo-Prefix.pch";
+				INFOPLIST_FILE = "iflyMSCDemoTests/iflyMSCDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F037E19F1964F0F7001F78C0 /* Build configuration list for PBXProject "iflyMSCDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F037E1CE1964F0F7001F78C0 /* Debug */,
+				F037E1CF1964F0F7001F78C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F037E1D01964F0F7001F78C0 /* Build configuration list for PBXNativeTarget "iflyMSCDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F037E1D11964F0F7001F78C0 /* Debug */,
+				F037E1D21964F0F7001F78C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F037E1D31964F0F7001F78C0 /* Build configuration list for PBXNativeTarget "iflyMSCDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F037E1D41964F0F7001F78C0 /* Debug */,
+				F037E1D51964F0F7001F78C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F037E19C1964F0F7001F78C0 /* Project object */;
+}

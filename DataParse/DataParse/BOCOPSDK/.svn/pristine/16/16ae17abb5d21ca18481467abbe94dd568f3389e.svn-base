@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'BOCOPNetFrame' target in the 'BOCOPNetFrame' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
+

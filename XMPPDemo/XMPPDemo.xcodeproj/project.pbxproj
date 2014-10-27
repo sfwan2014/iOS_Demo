@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		651CDC9B18ADF0140057C582 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 651CDC9A18ADF0140057C582 /* Foundation.framework */; };
+		651CDC9D18ADF0140057C582 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 651CDC9C18ADF0140057C582 /* CoreGraphics.framework */; };
+		651CDC9F18ADF0140057C582 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 651CDC9E18ADF0140057C582 /* UIKit.framework */; };
+		651CDCA518ADF0140057C582 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 651CDCA318ADF0140057C582 /* InfoPlist.strings */; };
+		651CDCA718ADF0140057C582 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 651CDCA618ADF0140057C582 /* main.m */; };
+		651CDCAB18ADF0140057C582 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 651CDCAA18ADF0140057C582 /* AppDelegate.m */; };
+		651CDCAE18ADF0140057C582 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 651CDCAC18ADF0140057C582 /* Main_iPhone.storyboard */; };
+		651CDCB118ADF0140057C582 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 651CDCAF18ADF0140057C582 /* Main_iPad.storyboard */; };
+		651CDCB418ADF0140057C582 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 651CDCB318ADF0140057C582 /* ViewController.m */; };
+		651CDCB618ADF0140057C582 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 651CDCB518ADF0140057C582 /* Images.xcassets */; };
+		651CDCBD18ADF0140057C582 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 651CDCBC18ADF0140057C582 /* XCTest.framework */; };
+		651CDCBE18ADF0140057C582 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 651CDC9A18ADF0140057C582 /* Foundation.framework */; };
+		651CDCBF18ADF0140057C582 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 651CDC9E18ADF0140057C582 /* UIKit.framework */; };
+		651CDCC718ADF0140057C582 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 651CDCC518ADF0140057C582 /* InfoPlist.strings */; };
+		651CDCC918ADF0140057C582 /* XMPPDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 651CDCC818ADF0140057C582 /* XMPPDemoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		651CDCC018ADF0140057C582 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 651CDC8F18ADF0140057C582 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 651CDC9618ADF0140057C582;
+			remoteInfo = XMPPDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		651CDC9718ADF0140057C582 /* XMPPDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMPPDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		651CDC9A18ADF0140057C582 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		651CDC9C18ADF0140057C582 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		651CDC9E18ADF0140057C582 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		651CDCA218ADF0140057C582 /* XMPPDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "XMPPDemo-Info.plist"; sourceTree = "<group>"; };
+		651CDCA418ADF0140057C582 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		651CDCA618ADF0140057C582 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		651CDCA818ADF0140057C582 /* XMPPDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XMPPDemo-Prefix.pch"; sourceTree = "<group>"; };
+		651CDCA918ADF0140057C582 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		651CDCAA18ADF0140057C582 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		651CDCAD18ADF0140057C582 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		651CDCB018ADF0140057C582 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		651CDCB218ADF0140057C582 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		651CDCB318ADF0140057C582 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		651CDCB518ADF0140057C582 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		651CDCBB18ADF0140057C582 /* XMPPDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XMPPDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		651CDCBC18ADF0140057C582 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		651CDCC418ADF0140057C582 /* XMPPDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "XMPPDemoTests-Info.plist"; sourceTree = "<group>"; };
+		651CDCC618ADF0140057C582 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		651CDCC818ADF0140057C582 /* XMPPDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMPPDemoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		651CDC9418ADF0140057C582 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				651CDC9D18ADF0140057C582 /* CoreGraphics.framework in Frameworks */,
+				651CDC9F18ADF0140057C582 /* UIKit.framework in Frameworks */,
+				651CDC9B18ADF0140057C582 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		651CDCB818ADF0140057C582 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				651CDCBD18ADF0140057C582 /* XCTest.framework in Frameworks */,
+				651CDCBF18ADF0140057C582 /* UIKit.framework in Frameworks */,
+				651CDCBE18ADF0140057C582 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		651CDC8E18ADF0140057C582 = {
+			isa = PBXGroup;
+			children = (
+				651CDCA018ADF0140057C582 /* XMPPDemo */,
+				651CDCC218ADF0140057C582 /* XMPPDemoTests */,
+				651CDC9918ADF0140057C582 /* Frameworks */,
+				651CDC9818ADF0140057C582 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		651CDC9818ADF0140057C582 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				651CDC9718ADF0140057C582 /* XMPPDemo.app */,
+				651CDCBB18ADF0140057C582 /* XMPPDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		651CDC9918ADF0140057C582 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				651CDC9A18ADF0140057C582 /* Foundation.framework */,
+				651CDC9C18ADF0140057C582 /* CoreGraphics.framework */,
+				651CDC9E18ADF0140057C582 /* UIKit.framework */,
+				651CDCBC18ADF0140057C582 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		651CDCA018ADF0140057C582 /* XMPPDemo */ = {
+			isa = PBXGroup;
+			children = (
+				651CDCA918ADF0140057C582 /* AppDelegate.h */,
+				651CDCAA18ADF0140057C582 /* AppDelegate.m */,
+				651CDCAC18ADF0140057C582 /* Main_iPhone.storyboard */,
+				651CDCAF18ADF0140057C582 /* Main_iPad.storyboard */,
+				651CDCB218ADF0140057C582 /* ViewController.h */,
+				651CDCB318ADF0140057C582 /* ViewController.m */,
+				651CDCB518ADF0140057C582 /* Images.xcassets */,
+				651CDCA118ADF0140057C582 /* Supporting Files */,
+			);
+			path = XMPPDemo;
+			sourceTree = "<group>";
+		};
+		651CDCA118ADF0140057C582 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				651CDCA218ADF0140057C582 /* XMPPDemo-Info.plist */,
+				651CDCA318ADF0140057C582 /* InfoPlist.strings */,
+				651CDCA618ADF0140057C582 /* main.m */,
+				651CDCA818ADF0140057C582 /* XMPPDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		651CDCC218ADF0140057C582 /* XMPPDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				651CDCC818ADF0140057C582 /* XMPPDemoTests.m */,
+				651CDCC318ADF0140057C582 /* Supporting Files */,
+			);
+			path = XMPPDemoTests;
+			sourceTree = "<group>";
+		};
+		651CDCC318ADF0140057C582 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				651CDCC418ADF0140057C582 /* XMPPDemoTests-Info.plist */,
+				651CDCC518ADF0140057C582 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		651CDC9618ADF0140057C582 /* XMPPDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 651CDCCC18ADF0140057C582 /* Build configuration list for PBXNativeTarget "XMPPDemo" */;
+			buildPhases = (
+				651CDC9318ADF0140057C582 /* Sources */,
+				651CDC9418ADF0140057C582 /* Frameworks */,
+				651CDC9518ADF0140057C582 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XMPPDemo;
+			productName = XMPPDemo;
+			productReference = 651CDC9718ADF0140057C582 /* XMPPDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		651CDCBA18ADF0140057C582 /* XMPPDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 651CDCCF18ADF0140057C582 /* Build configuration list for PBXNativeTarget "XMPPDemoTests" */;
+			buildPhases = (
+				651CDCB718ADF0140057C582 /* Sources */,
+				651CDCB818ADF0140057C582 /* Frameworks */,
+				651CDCB918ADF0140057C582 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				651CDCC118ADF0140057C582 /* PBXTargetDependency */,
+			);
+			name = XMPPDemoTests;
+			productName = XMPPDemoTests;
+			productReference = 651CDCBB18ADF0140057C582 /* XMPPDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		651CDC8F18ADF0140057C582 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = shaofa;
+				TargetAttributes = {
+					651CDCBA18ADF0140057C582 = {
+						TestTargetID = 651CDC9618ADF0140057C582;
+					};
+				};
+			};
+			buildConfigurationList = 651CDC9218ADF0140057C582 /* Build configuration list for PBXProject "XMPPDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 651CDC8E18ADF0140057C582;
+			productRefGroup = 651CDC9818ADF0140057C582 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				651CDC9618ADF0140057C582 /* XMPPDemo */,
+				651CDCBA18ADF0140057C582 /* XMPPDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		651CDC9518ADF0140057C582 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				651CDCB118ADF0140057C582 /* Main_iPad.storyboard in Resources */,
+				651CDCB618ADF0140057C582 /* Images.xcassets in Resources */,
+				651CDCAE18ADF0140057C582 /* Main_iPhone.storyboard in Resources */,
+				651CDCA518ADF0140057C582 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		651CDCB918ADF0140057C582 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				651CDCC718ADF0140057C582 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		651CDC9318ADF0140057C582 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				651CDCB418ADF0140057C582 /* ViewController.m in Sources */,
+				651CDCAB18ADF0140057C582 /* AppDelegate.m in Sources */,
+				651CDCA718ADF0140057C582 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		651CDCB718ADF0140057C582 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				651CDCC918ADF0140057C582 /* XMPPDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		651CDCC118ADF0140057C582 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 651CDC9618ADF0140057C582 /* XMPPDemo */;
+			targetProxy = 651CDCC018ADF0140057C582 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		651CDCA318ADF0140057C582 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				651CDCA418ADF0140057C582 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		651CDCAC18ADF0140057C582 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				651CDCAD18ADF0140057C582 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		651CDCAF18ADF0140057C582 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				651CDCB018ADF0140057C582 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		651CDCC518ADF0140057C582 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				651CDCC618ADF0140057C582 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		651CDCCA18ADF0140057C582 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		651CDCCB18ADF0140057C582 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		651CDCCD18ADF0140057C582 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XMPPDemo/XMPPDemo-Prefix.pch";
+				INFOPLIST_FILE = "XMPPDemo/XMPPDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		651CDCCE18ADF0140057C582 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XMPPDemo/XMPPDemo-Prefix.pch";
+				INFOPLIST_FILE = "XMPPDemo/XMPPDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		651CDCD018ADF0140057C582 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/XMPPDemo.app/XMPPDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XMPPDemo/XMPPDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "XMPPDemoTests/XMPPDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		651CDCD118ADF0140057C582 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/XMPPDemo.app/XMPPDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XMPPDemo/XMPPDemo-Prefix.pch";
+				INFOPLIST_FILE = "XMPPDemoTests/XMPPDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		651CDC9218ADF0140057C582 /* Build configuration list for PBXProject "XMPPDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				651CDCCA18ADF0140057C582 /* Debug */,
+				651CDCCB18ADF0140057C582 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		651CDCCC18ADF0140057C582 /* Build configuration list for PBXNativeTarget "XMPPDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				651CDCCD18ADF0140057C582 /* Debug */,
+				651CDCCE18ADF0140057C582 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		651CDCCF18ADF0140057C582 /* Build configuration list for PBXNativeTarget "XMPPDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				651CDCD018ADF0140057C582 /* Debug */,
+				651CDCD118ADF0140057C582 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 651CDC8F18ADF0140057C582 /* Project object */;
+}
