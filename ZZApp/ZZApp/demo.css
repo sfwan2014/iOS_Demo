@@ -1,0 +1,60 @@
+
+*{margin:0;padding:0;}
+
+div.bg{background-color:#bbb;margin:0;padding:0;
+}
+
+li {font-size: 12px; padding-left: 5px; style:circle;}
+
+#wrapper{
+	width: 100%;
+	overflow: hidden;
+}
+
+div.input{
+	background-color:#6a6a6a;
+	height:30px;
+	float:bottom;
+}
+
+p{
+	margin-left:20px;
+	margin-top:10px;
+}
+
+input{
+	margin-left: 20px;
+	margin-bottom:5px;
+	align-top:20px;
+	padding-left:5px;
+	
+	width:60%;
+	height:20px;
+	background-color#555; 
+	
+	font-size:14px;
+	
+	border: 1px #c9ebff solid;
+	border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+.submit{
+	margin-left:10px;
+	margin-bottom:20px;
+	width:20%;
+	height:30px;
+	background-color:#55f;
+	color:#fff;
+	font-family: "宋体";
+	cursor: pointer;
+	font-size:14px;
+	border: 1px #c9ebff solid;
+	border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
