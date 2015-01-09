@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F00A3FE11A5A663E005D2CB6 /* tbl_stock.xml in Resources */ = {isa = PBXBuildFile; fileRef = F00A3FE01A5A663E005D2CB6 /* tbl_stock.xml */; };
+		F0134FCC1A4BF67200DA9841 /* deposit.xml in Resources */ = {isa = PBXBuildFile; fileRef = F0134FCB1A4BF67200DA9841 /* deposit.xml */; };
+		F014593D1A53A5B300975A5A /* tbl_web_bank_product.xml in Resources */ = {isa = PBXBuildFile; fileRef = F014593C1A53A5B300975A5A /* tbl_web_bank_product.xml */; };
+		F031E7061A4FE56A00A8B9A7 /* tbl_org_info.xml in Resources */ = {isa = PBXBuildFile; fileRef = F031E7051A4FE56A00A8B9A7 /* tbl_org_info.xml */; };
 		F043EB6019D00E2200BC6377 /* bank.xml in Resources */ = {isa = PBXBuildFile; fileRef = F043EB5F19D00E2200BC6377 /* bank.xml */; };
 		F043EB6319D00F4700BC6377 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = F043EB6219D00F4700BC6377 /* XMLReader.m */; };
 		F051AB6619C2830600BF4AC7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F051AB6519C2830600BF4AC7 /* Foundation.framework */; };
@@ -42,6 +46,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F00A3FE01A5A663E005D2CB6 /* tbl_stock.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = tbl_stock.xml; sourceTree = "<group>"; };
+		F0134FCB1A4BF67200DA9841 /* deposit.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = deposit.xml; sourceTree = "<group>"; };
+		F014593C1A53A5B300975A5A /* tbl_web_bank_product.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = tbl_web_bank_product.xml; sourceTree = "<group>"; };
+		F031E7051A4FE56A00A8B9A7 /* tbl_org_info.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = tbl_org_info.xml; sourceTree = "<group>"; };
 		F043EB5F19D00E2200BC6377 /* bank.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = bank.xml; sourceTree = "<group>"; };
 		F043EB6119D00F4700BC6377 /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
 		F043EB6219D00F4700BC6377 /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
@@ -139,6 +147,10 @@
 				F051AB9619C2831400BF4AC7 /* ViewController.xib */,
 				F051AB7719C2830600BF4AC7 /* Images.xcassets */,
 				F051ABA419C2CB5A00BF4AC7 /* bankList.js */,
+				F031E7051A4FE56A00A8B9A7 /* tbl_org_info.xml */,
+				F014593C1A53A5B300975A5A /* tbl_web_bank_product.xml */,
+				F00A3FE01A5A663E005D2CB6 /* tbl_stock.xml */,
+				F0134FCB1A4BF67200DA9841 /* deposit.xml */,
 				F043EB5F19D00E2200BC6377 /* bank.xml */,
 				F0EA1F7719D2919E003B9A9C /* city.xml */,
 				F051AB9919C2833500BF4AC7 /* city.js */,
@@ -251,7 +263,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0134FCC1A4BF67200DA9841 /* deposit.xml in Resources */,
+				F031E7061A4FE56A00A8B9A7 /* tbl_org_info.xml in Resources */,
+				F014593D1A53A5B300975A5A /* tbl_web_bank_product.xml in Resources */,
 				F051ABA619C2CB5F00BF4AC7 /* bankList.js in Resources */,
+				F00A3FE11A5A663E005D2CB6 /* tbl_stock.xml in Resources */,
 				F051AB9B19C2833F00BF4AC7 /* city.js in Resources */,
 				F051AB7019C2830600BF4AC7 /* InfoPlist.strings in Resources */,
 				F043EB6019D00E2200BC6377 /* bank.xml in Resources */,

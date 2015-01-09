@@ -31,7 +31,143 @@
     // Do any additional setup after loading the view from its nib.
     
 //    [self handleBank];
-    [self handleCity];
+//    [self handleCity];
+    [self handleStock];
+//    [self handleDeposit];
+//    [self handleMonerayfund];
+}
+
+-(void)handleDeposit{
+    NSString *resourcePath = [[NSBundle mainBundle] pathForResource:@"deposit.xml" ofType:nil];
+    NSString *bankStr = [[NSString alloc] initWithContentsOfFile:resourcePath encoding:NSUTF8StringEncoding error:nil];
+    
+    //XML文本范例
+    NSString *testXMLString = bankStr;//@"Cake0.55RegularChocolateBlueberryNoneGlazedSugar";
+    
+    //    NSLog(@"xml string[\n%@\n]", testXMLString);
+    // 解析XML为NSDictionary
+    NSError *parseError = nil;
+    NSDictionary *xmlDictionary = [XMLReader dictionaryForXMLString:testXMLString error:&parseError];
+    // 打印 NSDictionary
+    //    NSLog(@"%@", xmlDictionary);
+    
+    NSDictionary *data = xmlDictionary[@"data"];
+    NSArray *rows = data[@"row"];
+    
+    NSMutableArray *arr = [NSMutableArray array];
+    for (NSDictionary *dict in rows) {
+        NSMutableDictionary *dic = [NSMutableDictionary dictionary];
+        
+        NSString *org_code = dict[@"org_code"][@"text"];
+        NSString *org_name = dict[@"org_name"][@"text"];
+        
+        NSNumber *current = dict[@"current"][@"text"];
+        NSNumber *time_3m = dict[@"time_3m"][@"text"];
+        NSNumber *time_6m = dict[@"time_6m"][@"text"];
+        NSNumber *time_12m = dict[@"time_12m"][@"text"];
+        NSNumber *time_24m = dict[@"time_24m"][@"text"];
+        NSNumber *time_36m = dict[@"time_36m"][@"text"];
+        NSNumber *time_60m = dict[@"time_60m"][@"text"];
+        
+        [dic setObject:org_name forKey:@"name"];
+        [dic setObject:org_code forKey:@"code"];
+        
+        [dic setObject:current forKey:@"current"];
+        [dic setObject:time_3m forKey:@"time_3m"];
+        [dic setObject:time_6m forKey:@"time_6m"];
+        [dic setObject:time_12m forKey:@"time_12m"];
+        [dic setObject:time_24m forKey:@"time_24m"];
+        [dic setObject:time_36m forKey:@"time_36m"];
+        [dic setObject:time_60m forKey:@"time_60m"];
+        
+        [dic setObject:@"deposit" forKey:@"type"];
+        [dic setObject:@NO forKey:@"status"];
+        [arr addObject:dic];
+    }
+    
+//    [arr sortUsingComparator:^NSComparisonResult(NSDictionary *obj1, NSDictionary *obj2) {
+//        NSString *cityName1 = obj1[@"pinyin"];
+//        NSString *cityName2 = obj2[@"pinyin"];
+//        NSComparisonResult result = [cityName1 compare:cityName2];
+//        
+//        return result;
+//    }];
+//    
+//    NSMutableDictionary *outDic = [NSMutableDictionary dictionary];
+//    for (NSDictionary *dic in arr) {
+//        
+//        NSString *pinyin = dic[@"pinyin"];
+//        NSString *firstWord = [pinyin substringToIndex:1];
+//        NSMutableArray *inArray = [outDic objectForKey:firstWord];
+//        if (inArray == nil) {
+//            inArray = [NSMutableArray array];
+//            [outDic setObject:inArray forKey:firstWord];
+//        }
+//        [inArray addObject:dic];
+//    }
+    
+    NSString *savePath= [NSString stringWithFormat:@"%@/tmp/%@", NSHomeDirectory(), @"Deposit.plist"];
+    [arr writeToFile:savePath atomically:YES];
+}
+
+-(void)handleStock{
+    NSString *resourcePath = [[NSBundle mainBundle] pathForResource:@"tbl_stock.xml" ofType:nil];
+    NSString *bankStr = [[NSString alloc] initWithContentsOfFile:resourcePath encoding:NSUTF8StringEncoding error:nil];
+    
+    //XML文本范例
+    NSString *testXMLString = bankStr;//@"Cake0.55RegularChocolateBlueberryNoneGlazedSugar";
+    
+    //    NSLog(@"xml string[\n%@\n]", testXMLString);
+    // 解析XML为NSDictionary
+    NSError *parseError = nil;
+    NSDictionary *xmlDictionary = [XMLReader dictionaryForXMLString:testXMLString error:&parseError];
+    // 打印 NSDictionary
+    //    NSLog(@"%@", xmlDictionary);
+    
+    NSDictionary *data = xmlDictionary[@"data"];
+    NSArray *rows = data[@"row"];
+    
+    NSMutableArray *arr = [NSMutableArray array];
+    for (NSDictionary *dict in rows) {
+        NSMutableDictionary *dic = [NSMutableDictionary dictionary];
+        
+        NSString *stock_code = dict[@"stock_code"][@"text"];
+        NSString *stock_short_code = dict[@"stock_short_code"][@"text"];
+        NSString *stock_name = dict[@"stock_name"][@"text"];
+        NSString *pinyin = dict[@"pinyin"][@"text"];
+        
+        [dic setObject:stock_name forKey:@"name"];
+        [dic setObject:stock_code forKey:@"code"];
+        [dic setObject:stock_short_code forKey:@"shortCode"];
+        [dic setObject:pinyin forKey:@"pinyin"];
+        [dic setObject:@"stock" forKey:@"type"];
+        [dic setObject:@NO forKey:@"status"];
+        [arr addObject:dic];
+    }
+    
+//    [arr sortUsingComparator:^NSComparisonResult(NSDictionary *obj1, NSDictionary *obj2) {
+//        NSString *cityName1 = obj1[@"pinyin"];
+//        NSString *cityName2 = obj2[@"pinyin"];
+//        NSComparisonResult result = [cityName1 compare:cityName2];
+//        
+//        return result;
+//    }];
+    
+//    NSMutableDictionary *outDic = [NSMutableDictionary dictionary];
+//    for (NSDictionary *dic in arr) {
+//        
+//        NSString *pinyin = dic[@"pinyin"];
+//        NSString *firstWord = [pinyin substringToIndex:1];
+//        NSMutableArray *inArray = [outDic objectForKey:firstWord];
+//        if (inArray == nil) {
+//            inArray = [NSMutableArray array];
+//            [outDic setObject:inArray forKey:firstWord];
+//        }
+//        [inArray addObject:dic];
+//    }
+    
+    NSString *savePath= [NSString stringWithFormat:@"%@/tmp/%@", NSHomeDirectory(), @"Stock.plist"];
+    [arr writeToFile:savePath atomically:YES];
 }
 
 -(void)handleCity{
@@ -108,7 +244,7 @@
 }
 
 -(void)handleBank{
-    NSString *resourcePath = [[NSBundle mainBundle] pathForResource:@"bank.xml" ofType:nil];
+    NSString *resourcePath = [[NSBundle mainBundle] pathForResource:@"tbl_org_info.xml" ofType:nil];
     NSString *bankStr = [[NSString alloc] initWithContentsOfFile:resourcePath encoding:NSUTF8StringEncoding error:nil];
     
     //XML文本范例
@@ -128,21 +264,24 @@
     for (NSDictionary *dict in rows) {
         NSMutableDictionary *dic = [NSMutableDictionary dictionary];
         
-        NSDictionary *org_industry = dict[@"org_industry"];
-        NSString *text = org_industry[@"text"];
-        if ([text integerValue] != 1) {
-            continue;
-        }
-        
-        NSString *bank = dict[@"org_name_short"][@"text"];
-        NSString *code = dict[@"CODE"][@"text"];
+        NSString *org_name = dict[@"org_name"][@"text"];
+        NSString *org_name_short = dict[@"org_name_short"][@"text"];
+        NSString *code = dict[@"org_code"][@"text"];
         NSString *name_short_pinyin = dict[@"name_short_pinyin"][@"text"];
-        [dic setObject:bank forKey:@"content"];
+        NSString *org_character = dict[@"org_character"][@"text"];
+        NSString *number = dict[@"number"][@"text"];
+        
+        [dic setObject:org_name forKey:@"org_name"];
+        [dic setObject:org_character forKey:@"org_character"];
+        [dic setObject:number forKey:@"number"];
+        
+        [dic setObject:org_name_short forKey:@"content"];
         [dic setObject:code forKey:@"code"];
         [dic setObject:name_short_pinyin forKey:@"pinyin"];
+        
         [dic setObject:@"bank" forKey:@"type"];
         [dic setObject:@NO forKey:@"status"];
-        [dic setObject:text forKey:@"org_industry"];
+//        [dic setObject:text forKey:@"org_industry"];
         [arr addObject:dic];
     }
     
@@ -167,11 +306,30 @@
         [inArray addObject:dic];
     }
     
+    [arr sortUsingComparator:^NSComparisonResult(NSDictionary *obj1, NSDictionary *obj2) {
+        NSInteger code1 = [obj1[@"number"] integerValue];
+        NSInteger code2 = [obj2[@"number"] integerValue];
+        
+        NSInteger res = code1-code2;
+        if (res < 0) {
+            return NSOrderedAscending;
+        } else if (res == 0) {
+            return NSOrderedSame;
+        } else {
+            return NSOrderedDescending;
+        }
+    }];
+    
+    NSArray *a = [NSArray array];
+    [outDic setObject:a forKey:@"1loc"];
+    
+    NSArray *hot = [arr subarrayWithRange:NSMakeRange(0, 16)];
+    [outDic setObject:@{@"hot":hot} forKey:@"1Hot"];
+    
     NSString *savePath= [NSString stringWithFormat:@"%@/tmp/%@", NSHomeDirectory(), @"BankList.plist"];
     [outDic writeToFile:savePath atomically:YES];
     //NSDictionary转换为Data
 //    NSData* jsonData = [NSJSONSerialization dataWithJSONObject:xmlDictionary options:NSJSONWritingPrettyPrinted error:&parseError];
-    
 }
 
 -(void)handleBank1
@@ -267,6 +425,88 @@
     
     NSString *savePath= [NSString stringWithFormat:@"%@/tmp/%@", NSHomeDirectory(), @"city.plist"];
     [outDic writeToFile:savePath atomically:YES];
+}
+
+
+
+-(void)handleMonerayfund{
+    NSString *resourcePath = [[NSBundle mainBundle] pathForResource:@"tbl_web_bank_product.xml" ofType:nil];
+    NSString *bankStr = [[NSString alloc] initWithContentsOfFile:resourcePath encoding:NSUTF8StringEncoding error:nil];
+    
+    //XML文本范例
+    NSString *testXMLString = bankStr;//@"Cake0.55RegularChocolateBlueberryNoneGlazedSugar";
+    
+    //    NSLog(@"xml string[\n%@\n]", testXMLString);
+    // 解析XML为NSDictionary
+    NSError *parseError = nil;
+    NSDictionary *xmlDictionary = [XMLReader dictionaryForXMLString:testXMLString error:&parseError];
+    // 打印 NSDictionary
+    //    NSLog(@"%@", xmlDictionary);
+    
+    NSDictionary *data = xmlDictionary[@"data"];
+    NSArray *rows = data[@"row"];
+    
+    NSMutableArray *arr = [NSMutableArray array];
+    for (NSDictionary *dict in rows) {
+        NSMutableDictionary *dic = [NSMutableDictionary dictionary];
+        
+        NSString *product_name = dict[@"product_name"][@"text"];
+        NSString *fund_name = dict[@"fund_name"][@"text"];
+        product_name = [NSString stringWithFormat:@"%@-%@", product_name, fund_name];
+        NSString *ids = dict[@"id"][@"text"];
+        NSString *pinyin = dict[@"pinyin"][@"text"];
+        
+        [dic setObject:product_name forKey:@"content"];
+        [dic setObject:ids forKey:@"code"];
+        [dic setObject:pinyin forKey:@"pinyin"];
+        
+        [dic setObject:@"monetary" forKey:@"type"];
+        [dic setObject:@NO forKey:@"status"];
+        //        [dic setObject:text forKey:@"org_industry"];
+        [arr addObject:dic];
+    }
+    
+    [arr sortUsingComparator:^NSComparisonResult(NSDictionary *obj1, NSDictionary *obj2) {
+        NSString *cityName1 = obj1[@"pinyin"];
+        NSString *cityName2 = obj2[@"pinyin"];
+        NSComparisonResult result = [cityName1 compare:cityName2];
+        
+        return result;
+    }];
+    
+    NSMutableDictionary *outDic = [NSMutableDictionary dictionary];
+    for (NSDictionary *dic in arr) {
+        
+        NSString *pinyin = dic[@"pinyin"];
+        NSString *firstWord = [pinyin substringToIndex:1];
+        firstWord = [firstWord uppercaseString];
+        NSMutableArray *inArray = [outDic objectForKey:firstWord];
+        if (inArray == nil) {
+            inArray = [NSMutableArray array];
+            [outDic setObject:inArray forKey:firstWord];
+        }
+        [inArray addObject:dic];
+    }
+    
+    [arr sortUsingComparator:^NSComparisonResult(NSDictionary *obj1, NSDictionary *obj2) {
+        NSString *code1 = obj1[@"code"];
+        NSString *code2 = obj2[@"code"];
+        NSComparisonResult result = [code1 compare:code2];
+        
+        return result;
+    }];
+    
+    NSArray *a = [NSArray array];
+    [outDic setObject:a forKey:@"1loc"];
+    
+    NSArray *hot = [arr subarrayWithRange:NSMakeRange(0, 12)];
+    [outDic setObject:@{@"hot":hot} forKey:@"1Hot"];
+    
+    NSString *savePath= [NSString stringWithFormat:@"%@/tmp/%@", NSHomeDirectory(), @"Monetary.plist"];
+    BOOL succeed = [outDic writeToFile:savePath atomically:YES];
+    NSLog(@"%d", succeed);
+    //NSDictionary转换为Data
+    //    NSData* jsonData = [NSJSONSerialization dataWithJSONObject:xmlDictionary options:NSJSONWritingPrettyPrinted error:&parseError];
 }
 
 - (void)didReceiveMemoryWarning
